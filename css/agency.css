@@ -219,6 +219,9 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-custom {
   background-color: rgba(255, 255, 255, 0.975);
   border-bottom: 1px solid #eeeeee; }
+  @media (max-width: 767px) {
+    .navbar-custom {
+      display: none; } }
   .navbar-custom .navbar-brand {
     font-weight: bold;
     color: #222222; }
@@ -300,7 +303,7 @@ header {
     position: relative; }
     header .intro-text .intro-lead-in {
       font-family: "Dancing Script", "Helvetica Neue", Helvetica, Arial, cursive;
-      font-size: 22px;
+      font-size: 28px;
       line-height: 1;
       margin-bottom: 25px; }
     header .intro-text .intro-heading {

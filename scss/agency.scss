@@ -159,6 +159,10 @@ h1, h2, h3, h4, h5, h6 {
 // Custom Navigation Bar
 
 .navbar-custom {
+    @media(max-width:767px) {
+      display: none;
+    }
+
     background-color: rgba(white, 0.975);
     border-bottom: 1px solid $gray-lighter;
     .navbar-brand {
@@ -266,7 +270,7 @@ header {
 
       .intro-lead-in {
         @include script-font;
-        font-size: 22px;
+        font-size: 28px;
         line-height: 1;
         margin-bottom: 25px;
       }
