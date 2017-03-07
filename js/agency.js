@@ -68,7 +68,13 @@ function eventTracking(eDesc, action) {
   });
 
   $('a[target="_new"]').click(function() {
-    eventTracking( $(this).closest('section').data('project'), 'Visit Project' );
+
+    if( $(this).data('project') ) {
+      eventTracking( $(this).data('project'), 'View Modal' );
+    } else {
+      eventTracking( $(this).closest('section').data('project'), 'Visit Project' );
+    }
+
   });
 
 })(jQuery); // End of use strict
