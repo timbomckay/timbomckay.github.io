@@ -21,6 +21,7 @@ body {
 
 p {
   line-height: 1.7;
+  margin-bottom: 2em;
 
   // Setting dynamic REM size
 	$min-fs : 15px; // Minimum Font Size
@@ -68,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg-light-gray {
-    background-color: $gray-lighter;
+    background-color: whitesmoke;
 }
 
 .bg-darkest-gray {
@@ -133,6 +134,19 @@ h1, h2, h3, h4, h5, h6 {
       animation-iteration-count: infinite;
       animation-timing-function: linear;
     }
+  }
+}
+
+.btn-outline {
+  color: $theme-primary;
+  border: 2px solid;
+  background: 0 0;
+  transition: all .3s ease-in-out;
+  margin-top: 50px;
+  &:hover, &:focus {
+    color: white;
+    background: $theme-primary;
+    border: 2px solid $theme-primary;
   }
 }
 
@@ -312,6 +326,9 @@ section {
         font-size: 40px;
         margin-top: 0;
         margin-bottom: 15px;
+        &:last-child {
+          margin-bottom: 50px;
+        }
     }
     h3.section-subheading {
         font-size: 16px;

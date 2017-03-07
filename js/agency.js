@@ -63,8 +63,12 @@ function eventTracking(eDesc, action) {
 
   $('.portfolio-modal').on('shown.bs.modal', function () {
 
-    eventTracking( $(this).data('label') );
+    eventTracking( $(this).data('project'), 'View Modal' );
 
+  });
+
+  $('a[target="_new"]').click(function() {
+    eventTracking( $(this).closest('section').data('project'), 'Visit Project' );
   });
 
 })(jQuery); // End of use strict

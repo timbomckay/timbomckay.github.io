@@ -13,6 +13,7 @@ body {
 
 p {
   line-height: 1.7;
+  margin-bottom: 2em;
   font-size: calc( ((100vw - 600px) / (1440 - 600) * (18 - 15)) + 15px); }
   @media (max-width: 600px) {
     p {
@@ -47,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto; }
 
 .bg-light-gray {
-  background-color: #eeeeee; }
+  background-color: whitesmoke; }
 
 .bg-darkest-gray {
   background-color: #222222; }
@@ -180,6 +181,18 @@ h1, h2, h3, h4, h5, h6 {
             animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear; }
+
+.btn-outline {
+  color: #2196F3;
+  border: 2px solid;
+  background: 0 0;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  margin-top: 50px; }
+  .btn-outline:hover, .btn-outline:focus {
+    color: white;
+    background: #2196F3;
+    border: 2px solid #2196F3; }
 
 @-webkit-keyframes pulse {
   from {
@@ -341,6 +354,8 @@ section {
     font-size: 40px;
     margin-top: 0;
     margin-bottom: 15px; }
+    section h2.section-heading:last-child {
+      margin-bottom: 50px; }
   section h3.section-subheading {
     font-size: 16px;
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
