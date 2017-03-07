@@ -39,7 +39,7 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/gulpfile-min.js",
+		"oAP": "\/gulpfile.min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -124,99 +124,147 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/img\/portfolio\/dreams-preview.png": {
-		"ft": 32768,
-		"iS": 112060,
+	"\/img\/portfolio\/bacon-full.jpg": {
+		"ft": 16384,
+		"iS": 217440,
 		"oA": 0,
-		"oAP": "\/img\/portfolio\/dreams-preview.png",
+		"oAP": "\/img\/portfolio\/bacon-full.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/img\/portfolio\/dreams.png": {
-		"ft": 32768,
-		"iS": 62658,
+	"\/img\/portfolio\/bacon-thumb.jpg": {
+		"ft": 16384,
+		"iS": 72764,
 		"oA": 0,
-		"oAP": "\/img\/portfolio\/dreams.png",
+		"oAP": "\/img\/portfolio\/bacon-thumb.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/img\/portfolio\/escape-preview.png": {
-		"ft": 32768,
-		"iS": 165358,
+	"\/img\/portfolio\/base-theme-full.jpg": {
+		"ft": 16384,
+		"iS": 150572,
 		"oA": 0,
-		"oAP": "\/img\/portfolio\/escape-preview.png",
+		"oAP": "\/img\/portfolio\/base-theme-full.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/img\/portfolio\/escape.png": {
-		"ft": 32768,
-		"iS": 85423,
+	"\/img\/portfolio\/base-theme-thumb.jpg": {
+		"ft": 16384,
+		"iS": 61147,
 		"oA": 0,
-		"oAP": "\/img\/portfolio\/escape.png",
+		"oAP": "\/img\/portfolio\/base-theme-thumb.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/img\/portfolio\/golden-preview.png": {
-		"ft": 32768,
-		"iS": 177338,
+	"\/img\/portfolio\/cfe-full.jpg": {
+		"ft": 16384,
+		"iS": 177267,
 		"oA": 0,
-		"oAP": "\/img\/portfolio\/golden-preview.png",
+		"oAP": "\/img\/portfolio\/cfe-full.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/img\/portfolio\/golden.png": {
-		"ft": 32768,
-		"iS": 93325,
+	"\/img\/portfolio\/cfe-thumb.jpg": {
+		"ft": 16384,
+		"iS": 60816,
 		"oA": 0,
-		"oAP": "\/img\/portfolio\/golden.png",
+		"oAP": "\/img\/portfolio\/cfe-thumb.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/img\/portfolio\/roundicons-free.png": {
-		"ft": 32768,
-		"iS": 259234,
+	"\/img\/portfolio\/downunder-full.jpg": {
+		"ft": 16384,
+		"iS": 220002,
 		"oA": 0,
-		"oAP": "\/img\/portfolio\/roundicons-free.png",
+		"oAP": "\/img\/portfolio\/downunder-full.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/img\/portfolio\/roundicons.png": {
-		"ft": 32768,
-		"iS": 120066,
+	"\/img\/portfolio\/downunder-thumb.jpg": {
+		"ft": 16384,
+		"iS": 58048,
 		"oA": 0,
-		"oAP": "\/img\/portfolio\/roundicons.png",
+		"oAP": "\/img\/portfolio\/downunder-thumb.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/img\/portfolio\/startup-framework-preview.png": {
-		"ft": 32768,
-		"iS": 262195,
+	"\/img\/portfolio\/hilliard-full.jpg": {
+		"ft": 16384,
+		"iS": 321138,
 		"oA": 0,
-		"oAP": "\/img\/portfolio\/startup-framework-preview.png",
+		"oAP": "\/img\/portfolio\/hilliard-full.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/img\/portfolio\/startup-framework.png": {
-		"ft": 32768,
-		"iS": 187564,
+	"\/img\/portfolio\/hilliard-thumb.jpg": {
+		"ft": 16384,
+		"iS": 90799,
 		"oA": 0,
-		"oAP": "\/img\/portfolio\/startup-framework.png",
+		"oAP": "\/img\/portfolio\/hilliard-thumb.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/img\/portfolio\/treehouse-preview.png": {
-		"ft": 32768,
-		"iS": 151139,
+	"\/img\/portfolio\/irvine-full.jpg": {
+		"ft": 16384,
+		"iS": 326281,
 		"oA": 0,
-		"oAP": "\/img\/portfolio\/treehouse-preview.png",
+		"oAP": "\/img\/portfolio\/irvine-full.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/img\/portfolio\/treehouse.png": {
-		"ft": 32768,
-		"iS": 80328,
+	"\/img\/portfolio\/irvine-thumb.jpg": {
+		"ft": 16384,
+		"iS": 93925,
 		"oA": 0,
-		"oAP": "\/img\/portfolio\/treehouse.png",
+		"oAP": "\/img\/portfolio\/irvine-thumb.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/portfolio\/ket-full.jpg": {
+		"ft": 16384,
+		"iS": 224880,
+		"oA": 0,
+		"oAP": "\/img\/portfolio\/ket-full.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/portfolio\/ket-thumb.jpg": {
+		"ft": 16384,
+		"iS": 75017,
+		"oA": 0,
+		"oAP": "\/img\/portfolio\/ket-thumb.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/portfolio\/nettango-full.jpg": {
+		"ft": 16384,
+		"iS": 225663,
+		"oA": 0,
+		"oAP": "\/img\/portfolio\/nettango-full.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/portfolio\/nettango-thumb.jpg": {
+		"ft": 16384,
+		"iS": 73767,
+		"oA": 0,
+		"oAP": "\/img\/portfolio\/nettango-thumb.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/portfolio\/zanvartis-full.jpg": {
+		"ft": 16384,
+		"iS": 154474,
+		"oA": 0,
+		"oAP": "\/img\/portfolio\/zanvartis-full.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/portfolio\/zanvartis-thumb.jpg": {
+		"ft": 16384,
+		"iS": 49297,
+		"oA": 0,
+		"oAP": "\/img\/portfolio\/zanvartis-thumb.jpg",
 		"oF": 0,
 		"opt": 0
 		},
@@ -254,7 +302,7 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/js\/agency-min.js",
+		"oAP": "\/js\/agency.min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -263,7 +311,7 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/js\/agency.min-min.js",
+		"oAP": "\/js\/agency.min.min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -397,7 +445,7 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/vendor\/bootstrap\/js\/bootstrap-min.js",
+		"oAP": "\/vendor\/bootstrap\/js\/bootstrap.min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -406,7 +454,7 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/vendor\/bootstrap\/js\/bootstrap.min-min.js",
+		"oAP": "\/vendor\/bootstrap\/js\/bootstrap.min.min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -895,7 +943,7 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/vendor\/jquery\/jquery-min.js",
+		"oAP": "\/vendor\/jquery\/jquery.min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -904,7 +952,7 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/vendor\/jquery\/jquery.min-min.js",
+		"oAP": "\/vendor\/jquery\/jquery.min.min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -2673,7 +2721,7 @@
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*-min.js",
+		"autoOutputPathFilenamePattern": "*.min.js",
 		"autoOutputPathRelativePath": "\/min",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",

@@ -2,6 +2,9 @@
 @import "mixins.scss";
 
 // Global Components
+html {
+  text-rendering: optimizeLegibility;
+}
 
 body {
     overflow-x: hidden;
@@ -17,12 +20,22 @@ body {
 }
 
 p {
-    font-size: 14px;
-    line-height: 1.75;
-}
+  line-height: 1.7;
 
-p.large {
-    font-size: 16px;
+  // Setting dynamic REM size
+	$min-fs : 15px; // Minimum Font Size
+	$max-fs : 18px; // Maximum Font Size
+	$min-vw : 600px; // Minimum Window width
+	$max-vw : 1440px; // Maximum Window width
+  font-size: calc( ((100vw - #{$min-vw}) / (#{strip-unit($max-vw)} - #{strip-unit($min-vw)}) * (#{strip-unit($max-fs)} - #{strip-unit($min-fs)})) + #{$min-fs} );
+
+  @media(max-width:#{$min-vw}) {
+  	font-size: $min-fs;
+  }
+
+  @media(min-width:#{$max-vw}) {
+  	font-size: $max-fs;
+  }
 }
 
 a,
@@ -45,8 +58,9 @@ a.active {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    @include heading-font;
-    font-weight: 700;
+  @include heading-font;
+  font-weight: 700;
+  text-rendering: geometricPrecision;
 }
 
 .img-centered {
@@ -64,33 +78,83 @@ h1, h2, h3, h4, h5, h6 {
 // Restyled Primary Buttons
 
 .btn-primary {
-    @include button-variant(white, $theme-primary, $theme-primary);
-    @include heading-font;
-    font-weight: 700;
+  @include button-variant(white, $theme-primary, $theme-primary);
+  // @include heading-font;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  .fa-chevron-right {
+    margin-right: 0.25em;
+  }
+}
+
+.btn-link:hover,
+.btn-link:focus {
+  text-decoration: none;
+}
+
+.btn-xl, .btn-lg {
+  @include button-variant(white, $theme-primary, $theme-primary);
+  // @include heading-font;
+  font-weight: 700;
+  border-radius: 3px;
 }
 
 .btn-xl {
-    @include button-variant(white, $theme-primary, $theme-primary);
-    @include heading-font;
-    font-weight: 700;
-    border-radius: 3px;
-    font-size: 18px;
-    padding: 20px 40px;
+  font-size: 18px;
+}
+
+.btn-circle {
+  width: 70px;
+  height: 70px;
+  margin-top: 15px;
+  padding: 7px 16px;
+  border: 2px solid #fff;
+  border-radius: 100% !important;
+  font-size: 40px;
+  color: #fff;
+  background: 0 0;
+  transition: background .3s ease-in-out;
+  &:hover,
+  &:focus {
+    outline: none;
+    color: white;
+    background: rgba(white, 0.1);
+  }
+  i.animated {
+    transition-property: transform;
+    transition-duration: 1s;
+  }
+  &:hover {
+    i.animated {
+      animation-name: pulse;
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+  }
+}
+
+@keyframes pulse {
+  from { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
 }
 
 // Custom Navigation Bar
 
 .navbar-custom {
-    background-color: $gray-darker;
-    border-color: transparent;
+    background-color: rgba(white, 0.975);
+    border-bottom: 1px solid $gray-lighter;
     .navbar-brand {
-        color: $theme-primary;
-        @include script-font;
+        font-weight:bold;
+        color: $gray-darker;
         &:hover,
         &:focus,
         &:active,
         &.active {
-            color: darken($theme-primary, 10%);
+          color: $theme-primary;
         }
     }
     .navbar-collapse {
@@ -110,10 +174,9 @@ h1, h2, h3, h4, h5, h6 {
     .nav {
         li {
             a {
-                @include heading-font;
-                font-weight: 400;
-                letter-spacing: 1px;
-                color: white;
+                font-size: 16px;
+                color: $gray-light;
+                transition: color 0.3s ease-in-out;
                 &:hover,
                 &:focus {
                     color: $theme-primary;
@@ -136,17 +199,12 @@ h1, h2, h3, h4, h5, h6 {
 
 @media(min-width:768px) {
     .navbar-custom {
-        background-color: transparent;
-        padding: 25px 0;
-        -webkit-transition: padding 0.3s;
-        -moz-transition: padding 0.3s;
-        transition: padding 0.3s;
-        border: none;
+        padding: 10px 0;
+        transition: none 0.3s ease-in-out;
+        transition-property: border-color, background-color;
         .navbar-brand {
-            font-size: 2em;
-            -webkit-transition: all 0.3s;
-            -moz-transition: all 0.3s;
-            transition: all 0.3s;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
         }
         .navbar-nav>.active>a {
             border-radius: 3px;
@@ -158,60 +216,89 @@ h1, h2, h3, h4, h5, h6 {
 
 @media(min-width:768px) {
     .navbar-custom.affix {
-        background-color: $gray-darker;
-        padding: 10px 0;
-        .navbar-brand {
-            font-size: 1.5em;
+        &-top {
+          background-color: transparent;
+          border-bottom-color: transparent;
+          color: white;
+          .nav li a {
+            color: white;
+
+            &:hover,
+            &:focus {
+                color: $theme-primary;
+                outline: none;
+            }
+          }
         }
+        .navbar-brand { opacity: 1; }
     }
 }
 
 header {
-    background-image: url('../img/header-bg.jpg');
+    background-color: $gray-dark;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
     @include background-cover;
     text-align: center;
     color: white;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
     .intro-text {
-        padding-top: 100px;
-        padding-bottom: 50px;
-        .intro-lead-in {
-            @include serif-font;
-            font-style: italic;
-            font-size: 22px;
-            line-height: 22px;
-            margin-bottom: 25px;
-        }
-        .intro-heading {
-            @include heading-font;
-            font-weight: 700;
-            font-size: 50px;
-            line-height: 50px;
-            margin-bottom: 25px;
-        }
+      position: relative;
+
+      .intro-lead-in {
+        @include script-font;
+        font-size: 22px;
+        line-height: 1;
+        margin-bottom: 25px;
+      }
+      .intro-heading {
+        @include heading-font;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 1;
+        margin-bottom: 0.25em;
+        text-rendering: geometricPrecision;
+      }
     }
+
+    // Gradient Overlay
+    &:before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0.333;
+
+      background: linear-gradient(45deg, #3F51B5, #2C3E50);
+      background-size: 400% 400%;
+      animation: gradient_overlay 12s ease infinite;
+
+      @keyframes gradient_overlay {
+        0%{background-position:100% 0%}
+        50%{background-position:0% 100%}
+        100%{background-position:100% 0%}
+      }
+
+    }
+
 }
 
 @media(min-width:768px) {
     header {
         .intro-text {
-            padding-top: 300px;
-            padding-bottom: 200px;
             .intro-lead-in {
-                @include serif-font;
-                font-style: italic;
                 font-size: 40px;
-                line-height: 40px;
-                margin-bottom: 25px;
             }
             .intro-heading {
-                @include heading-font;
-                font-weight: 700;
                 font-size: 75px;
-                line-height: 75px;
-                margin-bottom: 50px;
             }
         }
     }
@@ -260,8 +347,10 @@ section {
             position: relative;
             max-width: 400px;
             margin: 0 auto;
+            border: 1px solid #e7e7e7;
+
             .portfolio-hover {
-                background: fade-out($theme-primary, .9);
+                background: fade-out(#2C3E50, .5);
                 position: absolute;
                 width: 100%;
                 height: 100%;
@@ -532,58 +621,6 @@ aside.clients {
     }
 }
 
-// Contact Section
-
-section#contact {
-    background-color: $gray-darker;
-    background-image: url('../img/map-image.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    .section-heading {
-        color: white;
-    }
-    .form-group {
-        margin-bottom: 25px;
-        input,
-        textarea {
-            padding: 20px;
-        }
-        input.form-control {
-            height: auto;
-        }
-        textarea.form-control {
-            height: 236px;
-        }
-    }
-    .form-control:focus {
-        border-color: $theme-primary;
-        box-shadow: none;
-    }
-    ::-webkit-input-placeholder {
-       @include heading-font;
-       font-weight: 700;
-       color: $gray-lighter;
-    }
-    :-moz-placeholder { /* Firefox 18- */
-       @include heading-font;
-       font-weight: 700;
-       color: $gray-lighter;
-    }
-    ::-moz-placeholder {  /* Firefox 19+ */
-       @include heading-font;
-       font-weight: 700;
-       color: $gray-lighter;
-    }
-    :-ms-input-placeholder {
-       @include heading-font;
-       font-weight: 700;
-       color: $gray-lighter;
-    }
-    .text-danger {
-        color: $theme-danger;
-    }
-}
-
 // Footer
 
 footer {
@@ -643,6 +680,7 @@ ul.social-buttons {
         width: auto;
     }
     .modal-content {
+        background-color: whitesmoke;
         border-radius: 0;
         background-clip: border-box;
         -webkit-box-shadow: none;
@@ -674,8 +712,8 @@ ul.social-buttons {
     }
     .close-modal {
         position: absolute;
-        width:75px;
-        height:75px;
+        width:50px;
+        height:50px;
         background-color:transparent;
         top: 25px;
         right: 25px;
@@ -684,9 +722,9 @@ ul.social-buttons {
             opacity: 0.3;
         }
         .lr {
-            height:75px;
+            height:50px;
             width:1px;
-            margin-left:35px;
+            margin-left:25px;
             background-color:$gray-darker;
             transform: rotate(45deg);
             -ms-transform: rotate(45deg);
@@ -695,7 +733,7 @@ ul.social-buttons {
             /* Safari and Chrome */
             z-index:1051;
             .rl {
-                height:75px;
+                height:50px;
                 width:1px;
                 background-color:$gray-darker;
                 transform: rotate(90deg);
