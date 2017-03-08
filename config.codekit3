@@ -536,6 +536,12 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"\/README.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/README.html",
+		"oF": 0
+		},
 	"\/README.md": {
 		"cS": 0,
 		"eF": 1,
@@ -592,6 +598,12 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/Tim-Mckay-Resume.pdf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/Tim-Mckay-Resume.pdf",
+		"oF": 0
 		},
 	"\/vendor\/bootstrap\/css\/bootstrap.css": {
 		"aP": 1,
