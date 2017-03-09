@@ -72,7 +72,7 @@ function eventTracking(eDesc, action) {
     if( $(this).data('project') ) {
       eventTracking( $(this).data('project'), 'View Modal' );
     } else {
-      eventTracking( $(this).closest('section').data('project'), 'Visit Project' );
+      eventTracking( $(this).closest('.portfolio-modal').data('project'), 'Visit Project' );
     }
 
   });
