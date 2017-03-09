@@ -68,11 +68,10 @@ function eventTracking(eDesc, action) {
   });
 
   $('a[target="_new"]').click(function() {
-
     if( $(this).data('project') ) {
-      eventTracking( $(this).data('project'), 'View Modal' );
+      eventTracking( $(this).data('project') + ' view', 'View Modal' );
     } else {
-      eventTracking( $(this).closest('.portfolio-modal').data('project'), 'Visit Project' );
+      eventTracking( $(this).closest('.portfolio-modal').data('project') + ' visit', 'Visit Project' );
     }
 
   });
