@@ -4,77 +4,34 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "B6DD6438-63CE-4BAD-9B95-980B01EBF063"
+		"uuidString": "F4F8A794-DC9E-4757-A3C2-F4DD805856FB"
 		}
 	],
-"creatorBuild": "25568",
+"creatorBuild": "26680",
 "files": {
 	"\/.gitignore": {
+		"cB": 0,
 		"ft": 8192,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
-	"\/css\/agency.css": {
+	"\/css\/main.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/css\/agency-min.css",
+		"oAP": "\/css\/main-min.css",
 		"oF": 0,
-		"oS": 0
+		"oS": 3
 		},
-	"\/css\/agency.min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
+	"\/css\/main.css.map": {
+		"cB": 0,
+		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/css\/agency.min-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/gulpfile.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/gulpfile.min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/img\/about\/1.jpg": {
-		"ft": 16384,
-		"iS": 6987,
-		"oA": 0,
-		"oAP": "\/img\/about\/1.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/img\/about\/2.jpg": {
-		"ft": 16384,
-		"iS": 15337,
-		"oA": 0,
-		"oAP": "\/img\/about\/2.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/img\/about\/3.jpg": {
-		"ft": 16384,
-		"iS": 7338,
-		"oA": 0,
-		"oAP": "\/img\/about\/3.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/img\/about\/4.jpg": {
-		"ft": 16384,
-		"iS": 4902,
-		"oA": 0,
-		"oAP": "\/img\/about\/4.jpg",
-		"oF": 0,
-		"opt": 0
+		"oAP": "\/css\/main.css.map",
+		"oF": 0
 		},
 	"\/img\/favicons\/android-icon-144x144.png": {
 		"ft": 32768,
@@ -82,7 +39,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicons\/android-icon-144x144.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicons\/android-icon-192x192.png": {
 		"ft": 32768,
@@ -90,7 +50,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicons\/android-icon-192x192.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicons\/android-icon-36x36.png": {
 		"ft": 32768,
@@ -98,7 +61,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicons\/android-icon-36x36.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicons\/android-icon-48x48.png": {
 		"ft": 32768,
@@ -106,7 +72,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicons\/android-icon-48x48.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicons\/android-icon-72x72.png": {
 		"ft": 32768,
@@ -114,7 +83,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicons\/android-icon-72x72.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicons\/android-icon-96x96.png": {
 		"ft": 32768,
@@ -122,7 +94,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicons\/android-icon-96x96.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicons\/apple-icon-114x114.png": {
 		"ft": 32768,
@@ -130,7 +105,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicons\/apple-icon-114x114.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicons\/apple-icon-120x120.png": {
 		"ft": 32768,
@@ -138,7 +116,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicons\/apple-icon-120x120.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicons\/apple-icon-144x144.png": {
 		"ft": 32768,
@@ -146,7 +127,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicons\/apple-icon-144x144.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicons\/apple-icon-152x152.png": {
 		"ft": 32768,
@@ -154,7 +138,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicons\/apple-icon-152x152.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicons\/apple-icon-180x180.png": {
 		"ft": 32768,
@@ -162,7 +149,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicons\/apple-icon-180x180.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicons\/apple-icon-57x57.png": {
 		"ft": 32768,
@@ -170,7 +160,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicons\/apple-icon-57x57.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicons\/apple-icon-60x60.png": {
 		"ft": 32768,
@@ -178,7 +171,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicons\/apple-icon-60x60.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicons\/apple-icon-72x72.png": {
 		"ft": 32768,
@@ -186,7 +182,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicons\/apple-icon-72x72.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicons\/apple-icon-76x76.png": {
 		"ft": 32768,
@@ -194,7 +193,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicons\/apple-icon-76x76.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicons\/apple-icon-precomposed.png": {
 		"ft": 32768,
@@ -202,7 +204,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicons\/apple-icon-precomposed.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicons\/apple-icon.png": {
 		"ft": 32768,
@@ -210,7 +215,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicons\/apple-icon.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicons\/favicon-16x16.png": {
 		"ft": 32768,
@@ -218,7 +226,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicons\/favicon-16x16.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicons\/favicon-32x32.png": {
 		"ft": 32768,
@@ -226,7 +237,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicons\/favicon-32x32.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicons\/favicon-96x96.png": {
 		"ft": 32768,
@@ -234,11 +248,15 @@
 		"oA": 0,
 		"oAP": "\/img\/favicons\/favicon-96x96.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicons\/favicon.ico": {
+		"cB": 0,
 		"ft": 8192,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/img\/favicons\/favicon.ico",
 		"oF": 0
 		},
@@ -256,7 +274,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicons\/ms-icon-144x144.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicons\/ms-icon-150x150.png": {
 		"ft": 32768,
@@ -264,7 +285,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicons\/ms-icon-150x150.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicons\/ms-icon-310x310.png": {
 		"ft": 32768,
@@ -272,7 +296,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicons\/ms-icon-310x310.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicons\/ms-icon-70x70.png": {
 		"ft": 32768,
@@ -280,273 +307,231 @@
 		"oA": 0,
 		"oAP": "\/img\/favicons\/ms-icon-70x70.png",
 		"oF": 0,
-		"opt": 0
-		},
-	"\/img\/header-bg.jpg": {
-		"ft": 16384,
-		"iS": 238317,
-		"oA": 0,
-		"oAP": "\/img\/header-bg.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/img\/logos\/creative-market.jpg": {
-		"ft": 16384,
-		"iS": 1766,
-		"oA": 0,
-		"oAP": "\/img\/logos\/creative-market.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/img\/logos\/designmodo.jpg": {
-		"ft": 16384,
-		"iS": 1696,
-		"oA": 0,
-		"oAP": "\/img\/logos\/designmodo.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/img\/logos\/envato.jpg": {
-		"ft": 16384,
-		"iS": 2040,
-		"oA": 0,
-		"oAP": "\/img\/logos\/envato.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/img\/logos\/themeforest.jpg": {
-		"ft": 16384,
-		"iS": 1689,
-		"oA": 0,
-		"oAP": "\/img\/logos\/themeforest.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/img\/map-image.png": {
-		"ft": 32768,
-		"iS": 364038,
-		"oA": 0,
-		"oAP": "\/img\/map-image.png",
-		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/portfolio\/bacon-full.jpg": {
 		"ft": 16384,
 		"iS": 217440,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/portfolio\/bacon-full.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/img\/portfolio\/bacon-thumb.jpg": {
 		"ft": 16384,
 		"iS": 72764,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/portfolio\/bacon-thumb.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/img\/portfolio\/base-theme-full.jpg": {
 		"ft": 16384,
 		"iS": 150572,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/portfolio\/base-theme-full.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/img\/portfolio\/base-theme-thumb.jpg": {
 		"ft": 16384,
 		"iS": 61147,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/portfolio\/base-theme-thumb.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/img\/portfolio\/cfe-full.jpg": {
 		"ft": 16384,
 		"iS": 177267,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/portfolio\/cfe-full.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/img\/portfolio\/cfe-thumb.jpg": {
 		"ft": 16384,
 		"iS": 60816,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/portfolio\/cfe-thumb.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/img\/portfolio\/downunder-full.jpg": {
 		"ft": 16384,
 		"iS": 220002,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/portfolio\/downunder-full.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/img\/portfolio\/downunder-thumb.jpg": {
 		"ft": 16384,
 		"iS": 58048,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/portfolio\/downunder-thumb.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/img\/portfolio\/hilliard-full.jpg": {
 		"ft": 16384,
 		"iS": 321138,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/portfolio\/hilliard-full.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/img\/portfolio\/hilliard-thumb.jpg": {
 		"ft": 16384,
 		"iS": 90799,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/portfolio\/hilliard-thumb.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/img\/portfolio\/irvine-full.jpg": {
 		"ft": 16384,
 		"iS": 326281,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/portfolio\/irvine-full.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/img\/portfolio\/irvine-thumb.jpg": {
 		"ft": 16384,
 		"iS": 93925,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/portfolio\/irvine-thumb.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/img\/portfolio\/ket-full.jpg": {
 		"ft": 16384,
 		"iS": 224880,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/portfolio\/ket-full.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/img\/portfolio\/ket-thumb.jpg": {
 		"ft": 16384,
 		"iS": 75017,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/portfolio\/ket-thumb.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/img\/portfolio\/nettango-full.jpg": {
 		"ft": 16384,
 		"iS": 225663,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/portfolio\/nettango-full.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/img\/portfolio\/nettango-thumb.jpg": {
 		"ft": 16384,
 		"iS": 73767,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/portfolio\/nettango-thumb.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/img\/portfolio\/zanvartis-full.jpg": {
 		"ft": 16384,
 		"iS": 207747,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/portfolio\/zanvartis-full.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/img\/portfolio\/zanvartis-thumb.jpg": {
 		"ft": 16384,
 		"iS": 49297,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/portfolio\/zanvartis-thumb.jpg",
 		"oF": 0,
-		"opt": 0
-		},
-	"\/img\/team\/1.jpg": {
-		"ft": 16384,
-		"iS": 11310,
-		"oA": 0,
-		"oAP": "\/img\/team\/1.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/img\/team\/2.jpg": {
-		"ft": 16384,
-		"iS": 14401,
-		"oA": 0,
-		"oAP": "\/img\/team\/2.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/img\/team\/3.jpg": {
-		"ft": 16384,
-		"iS": 12159,
-		"oA": 0,
-		"oAP": "\/img\/team\/3.jpg",
-		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/index.html": {
+		"cB": 0,
 		"ft": 8192,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/index.html",
 		"oF": 0
 		},
-	"\/js\/agency.js": {
+	"\/js\/main.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/js\/agency.min.js",
+		"oAP": "\/js\/main-min.js",
 		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/agency.min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/agency.min.min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/LICENSE": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/LICENSE",
-		"oF": 0
-		},
-	"\/package.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/package-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/README.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/README.html",
-		"oF": 0
+		"sC": 3,
+		"tS": 1
 		},
 	"\/README.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -560,17 +545,17 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"\/scss\/_mixins.scss": {
+	"\/scss\/_typography.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/css\/_mixins.css",
+		"oAP": "\/css\/_typography.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"\/scss\/_variables.scss": {
@@ -579,601 +564,32 @@
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
 		"oAP": "\/css\/_variables.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/scss\/agency.scss": {
+	"\/scss\/main.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
-		"ma": 0,
+		"ma": 1,
 		"oA": 0,
-		"oAP": "\/css\/agency.css",
+		"oAP": "\/css\/main.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/Tim-Mckay-Resume.pdf": {
+	"\/Tim-McKay-Resume.pdf": {
+		"cB": 0,
 		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/Tim-Mckay-Resume.pdf",
-		"oF": 0
-		},
-	"\/vendor\/bootstrap\/css\/bootstrap.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
 		"oA": 0,
-		"oAP": "\/vendor\/bootstrap\/css\/bootstrap-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/vendor\/bootstrap\/css\/bootstrap.min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/vendor\/bootstrap\/css\/bootstrap.min-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/vendor\/bootstrap\/fonts\/glyphicons-halflings-regular.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/vendor\/bootstrap\/fonts\/glyphicons-halflings-regular.eot",
+		"oAP": "\/Tim-McKay-Resume.pdf",
 		"oF": 0
-		},
-	"\/vendor\/bootstrap\/fonts\/glyphicons-halflings-regular.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/vendor\/bootstrap\/fonts\/glyphicons-halflings-regular.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/vendor\/bootstrap\/fonts\/glyphicons-halflings-regular.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/vendor\/bootstrap\/fonts\/glyphicons-halflings-regular.ttf",
-		"oF": 0
-		},
-	"\/vendor\/bootstrap\/fonts\/glyphicons-halflings-regular.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/vendor\/bootstrap\/fonts\/glyphicons-halflings-regular.woff",
-		"oF": 0
-		},
-	"\/vendor\/bootstrap\/fonts\/glyphicons-halflings-regular.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/vendor\/bootstrap\/fonts\/glyphicons-halflings-regular.woff2",
-		"oF": 0
-		},
-	"\/vendor\/bootstrap\/js\/bootstrap.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/vendor\/bootstrap\/js\/bootstrap.min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/vendor\/bootstrap\/js\/bootstrap.min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/vendor\/bootstrap\/js\/bootstrap.min.min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/vendor\/font-awesome\/css\/font-awesome.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/vendor\/font-awesome\/css\/font-awesome-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/vendor\/font-awesome\/css\/font-awesome.min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/vendor\/font-awesome\/css\/font-awesome.min-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/vendor\/font-awesome\/fonts\/fontawesome-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/vendor\/font-awesome\/fonts\/fontawesome-webfont.eot",
-		"oF": 0
-		},
-	"\/vendor\/font-awesome\/fonts\/fontawesome-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/vendor\/font-awesome\/fonts\/fontawesome-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/vendor\/font-awesome\/fonts\/fontawesome-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/vendor\/font-awesome\/fonts\/fontawesome-webfont.ttf",
-		"oF": 0
-		},
-	"\/vendor\/font-awesome\/fonts\/fontawesome-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/vendor\/font-awesome\/fonts\/fontawesome-webfont.woff",
-		"oF": 0
-		},
-	"\/vendor\/font-awesome\/fonts\/fontawesome-webfont.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/vendor\/font-awesome\/fonts\/fontawesome-webfont.woff2",
-		"oF": 0
-		},
-	"\/vendor\/font-awesome\/fonts\/FontAwesome.otf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/vendor\/font-awesome\/fonts\/FontAwesome.otf",
-		"oF": 0
-		},
-	"\/vendor\/font-awesome\/less\/animated.less": {
-		"aP": 0,
-		"bl": 0,
-		"dJ": 0,
-		"ft": 1,
-		"ie": 1,
-		"iI": 0,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/vendor\/font-awesome\/less\/animated.css",
-		"oF": 0,
-		"oS": 0,
-		"rU": 0,
-		"sI": 0,
-		"sM": 0,
-		"sU": 0
-		},
-	"\/vendor\/font-awesome\/less\/bordered-pulled.less": {
-		"aP": 0,
-		"bl": 0,
-		"dJ": 0,
-		"ft": 1,
-		"ie": 1,
-		"iI": 0,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/vendor\/font-awesome\/less\/bordered-pulled.css",
-		"oF": 0,
-		"oS": 0,
-		"rU": 0,
-		"sI": 0,
-		"sM": 0,
-		"sU": 0
-		},
-	"\/vendor\/font-awesome\/less\/core.less": {
-		"aP": 0,
-		"bl": 0,
-		"dJ": 0,
-		"ft": 1,
-		"ie": 1,
-		"iI": 0,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/vendor\/font-awesome\/less\/core.css",
-		"oF": 0,
-		"oS": 0,
-		"rU": 0,
-		"sI": 0,
-		"sM": 0,
-		"sU": 0
-		},
-	"\/vendor\/font-awesome\/less\/fixed-width.less": {
-		"aP": 0,
-		"bl": 0,
-		"dJ": 0,
-		"ft": 1,
-		"ie": 1,
-		"iI": 0,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/vendor\/font-awesome\/less\/fixed-width.css",
-		"oF": 0,
-		"oS": 0,
-		"rU": 0,
-		"sI": 0,
-		"sM": 0,
-		"sU": 0
-		},
-	"\/vendor\/font-awesome\/less\/font-awesome.less": {
-		"aP": 0,
-		"bl": 0,
-		"dJ": 0,
-		"ft": 1,
-		"ie": 1,
-		"iI": 0,
-		"ma": 1,
-		"oA": 0,
-		"oAP": "\/vendor\/font-awesome\/less\/font-awesome.css",
-		"oF": 0,
-		"oS": 0,
-		"rU": 0,
-		"sI": 0,
-		"sM": 0,
-		"sU": 0
-		},
-	"\/vendor\/font-awesome\/less\/icons.less": {
-		"aP": 0,
-		"bl": 0,
-		"dJ": 0,
-		"ft": 1,
-		"ie": 1,
-		"iI": 0,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/vendor\/font-awesome\/less\/icons.css",
-		"oF": 0,
-		"oS": 0,
-		"rU": 0,
-		"sI": 0,
-		"sM": 0,
-		"sU": 0
-		},
-	"\/vendor\/font-awesome\/less\/larger.less": {
-		"aP": 0,
-		"bl": 0,
-		"dJ": 0,
-		"ft": 1,
-		"ie": 1,
-		"iI": 0,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/vendor\/font-awesome\/less\/larger.css",
-		"oF": 0,
-		"oS": 0,
-		"rU": 0,
-		"sI": 0,
-		"sM": 0,
-		"sU": 0
-		},
-	"\/vendor\/font-awesome\/less\/list.less": {
-		"aP": 0,
-		"bl": 0,
-		"dJ": 0,
-		"ft": 1,
-		"ie": 1,
-		"iI": 0,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/vendor\/font-awesome\/less\/list.css",
-		"oF": 0,
-		"oS": 0,
-		"rU": 0,
-		"sI": 0,
-		"sM": 0,
-		"sU": 0
-		},
-	"\/vendor\/font-awesome\/less\/mixins.less": {
-		"aP": 0,
-		"bl": 0,
-		"dJ": 0,
-		"ft": 1,
-		"ie": 1,
-		"iI": 0,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/vendor\/font-awesome\/less\/mixins.css",
-		"oF": 0,
-		"oS": 0,
-		"rU": 0,
-		"sI": 0,
-		"sM": 0,
-		"sU": 0
-		},
-	"\/vendor\/font-awesome\/less\/path.less": {
-		"aP": 0,
-		"bl": 0,
-		"dJ": 0,
-		"ft": 1,
-		"ie": 1,
-		"iI": 0,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/vendor\/font-awesome\/less\/path.css",
-		"oF": 0,
-		"oS": 0,
-		"rU": 0,
-		"sI": 0,
-		"sM": 0,
-		"sU": 0
-		},
-	"\/vendor\/font-awesome\/less\/rotated-flipped.less": {
-		"aP": 0,
-		"bl": 0,
-		"dJ": 0,
-		"ft": 1,
-		"ie": 1,
-		"iI": 0,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/vendor\/font-awesome\/less\/rotated-flipped.css",
-		"oF": 0,
-		"oS": 0,
-		"rU": 0,
-		"sI": 0,
-		"sM": 0,
-		"sU": 0
-		},
-	"\/vendor\/font-awesome\/less\/screen-reader.less": {
-		"aP": 0,
-		"bl": 0,
-		"dJ": 0,
-		"ft": 1,
-		"ie": 1,
-		"iI": 0,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/vendor\/font-awesome\/less\/screen-reader.css",
-		"oF": 0,
-		"oS": 0,
-		"rU": 0,
-		"sI": 0,
-		"sM": 0,
-		"sU": 0
-		},
-	"\/vendor\/font-awesome\/less\/stacked.less": {
-		"aP": 0,
-		"bl": 0,
-		"dJ": 0,
-		"ft": 1,
-		"ie": 1,
-		"iI": 0,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/vendor\/font-awesome\/less\/stacked.css",
-		"oF": 0,
-		"oS": 0,
-		"rU": 0,
-		"sI": 0,
-		"sM": 0,
-		"sU": 0
-		},
-	"\/vendor\/font-awesome\/less\/variables.less": {
-		"aP": 0,
-		"bl": 0,
-		"dJ": 0,
-		"ft": 1,
-		"ie": 1,
-		"iI": 0,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/vendor\/font-awesome\/less\/variables.css",
-		"oF": 0,
-		"oS": 0,
-		"rU": 0,
-		"sI": 0,
-		"sM": 0,
-		"sU": 0
-		},
-	"\/vendor\/font-awesome\/scss\/_animated.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/vendor\/font-awesome\/css\/_animated.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/vendor\/font-awesome\/scss\/_bordered-pulled.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/vendor\/font-awesome\/css\/_bordered-pulled.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/vendor\/font-awesome\/scss\/_core.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/vendor\/font-awesome\/css\/_core.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/vendor\/font-awesome\/scss\/_fixed-width.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/vendor\/font-awesome\/css\/_fixed-width.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/vendor\/font-awesome\/scss\/_icons.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/vendor\/font-awesome\/css\/_icons.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/vendor\/font-awesome\/scss\/_larger.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/vendor\/font-awesome\/css\/_larger.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/vendor\/font-awesome\/scss\/_list.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/vendor\/font-awesome\/css\/_list.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/vendor\/font-awesome\/scss\/_mixins.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/vendor\/font-awesome\/css\/_mixins.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/vendor\/font-awesome\/scss\/_path.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/vendor\/font-awesome\/css\/_path.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/vendor\/font-awesome\/scss\/_rotated-flipped.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/vendor\/font-awesome\/css\/_rotated-flipped.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/vendor\/font-awesome\/scss\/_screen-reader.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/vendor\/font-awesome\/css\/_screen-reader.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/vendor\/font-awesome\/scss\/_stacked.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/vendor\/font-awesome\/css\/_stacked.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/vendor\/font-awesome\/scss\/_variables.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/vendor\/font-awesome\/css\/_variables.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/vendor\/font-awesome\/scss\/font-awesome.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/vendor\/font-awesome\/css\/font-awesome.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/vendor\/jquery\/jquery.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/vendor\/jquery\/jquery.min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/vendor\/jquery\/jquery.min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/vendor\/jquery\/jquery.min.min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
 		}
 	},
 "hooks": [
@@ -1181,10 +597,11 @@
 "manualImportLinks": {
 	},
 "projectAttributes": {
-	"creationDate": 510125924,
+	"creationDate": 549291699,
 	"displayValue": "timbomckay",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-drunkArcher"
+	"iconImageName": "meme-facepalm",
+	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -1192,6 +609,7 @@
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"autoprefixerEnableIEGrid": 0,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
 	"babelConfigFileHandlingType": 0,
@@ -1588,13 +1006,21 @@
 			"active": 0,
 			"optionString": "{'setWithoutGet': true, 'getWithoutSet': false}"
 			},
+		"array-bracket-newline": {
+			"active": 0,
+			"optionString": "{'multiline': true, 'minItems': null}"
+			},
 		"array-bracket-spacing": {
 			"active": 0,
 			"optionString": "'never', {'singleValue': false, 'objectsInArrays': false, 'arraysInArrays': false}"
 			},
 		"array-callback-return": {
 			"active": 0,
-			"optionString": ""
+			"optionString": "{'allowImplicit': false}"
+			},
+		"array-element-newline": {
+			"active": 0,
+			"optionString": "'always'"
 			},
 		"arrow-body-style": {
 			"active": 0,
@@ -1692,6 +1118,10 @@
 			"active": 0,
 			"optionString": "'always', {'null': 'always'}"
 			},
+		"for-direction": {
+			"active": 0,
+			"optionString": ""
+			},
 		"func-call-spacing": {
 			"active": 0,
 			"optionString": "'never'"
@@ -1708,9 +1138,17 @@
 			"active": 0,
 			"optionString": "'expression'"
 			},
+		"function-paren-newline": {
+			"active": 0,
+			"optionString": "'multiline'"
+			},
 		"generator-star-spacing": {
 			"active": 0,
 			"optionString": "{'before': true, 'after': false}"
+			},
+		"getter-return": {
+			"active": 0,
+			"optionString": "{'allowImplicit': false}"
 			},
 		"global-require": {
 			"active": 0,
@@ -1736,9 +1174,13 @@
 			"active": 0,
 			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
 			},
+		"implicit-arrow-linebreak": {
+			"active": 0,
+			"optionString": "'beside'"
+			},
 		"indent": {
 			"active": 0,
-			"optionString": "4, {'SwitchCase': 0, 'VariableDeclarator': 1, 'outerIIFEBody': 1, }"
+			"optionString": "4, {'SwitchCase': 0, 'VariableDeclarator': 1, 'outerIIFEBody': 1 }"
 			},
 		"init-declarations": {
 			"active": 0,
@@ -1768,9 +1210,9 @@
 			"active": 0,
 			"optionString": "{'beforeBlockComment': true}"
 			},
-		"lines-around-directive": {
+		"lines-between-class-members": {
 			"active": 0,
-			"optionString": "{'before': 'always', 'after': 'always'}"
+			"optionString": "'always', {exceptAfterSingleLine: false}"
 			},
 		"max-depth": {
 			"active": 0,
@@ -1800,6 +1242,10 @@
 			"active": 0,
 			"optionString": "{'max': 1}"
 			},
+		"multiline-comment-style": {
+			"active": 0,
+			"optionString": "'starred-block'"
+			},
 		"multiline-ternary": {
 			"active": 0,
 			"optionString": "'always'"
@@ -1809,14 +1255,6 @@
 			"optionString": "{'newIsCap': true, 'capIsNew': true, 'newIsCapExceptions': [], 'capIsNewExceptions': ['Array', 'Boolean', 'Date', 'Error', 'Function', 'Number', 'Object', 'RegExp', 'String', 'Symbol'], 'properties': true}"
 			},
 		"new-parens": {
-			"active": 0,
-			"optionString": ""
-			},
-		"newline-after-var": {
-			"active": 0,
-			"optionString": "'always'"
-			},
-		"newline-before-return": {
 			"active": 0,
 			"optionString": ""
 			},
@@ -1840,6 +1278,10 @@
 			"active": 0,
 			"optionString": "{'allow': ['~'], 'int32Hint': true}"
 			},
+		"no-buffer-constructor": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-caller": {
 			"active": 0,
 			"optionString": ""
@@ -1854,6 +1296,10 @@
 			},
 		"no-class-assign": {
 			"active": 1,
+			"optionString": ""
+			},
+		"no-compare-neg-zero": {
+			"active": 0,
 			"optionString": ""
 			},
 		"no-cond-assign": {
@@ -1961,8 +1407,8 @@
 			"optionString": ""
 			},
 		"no-extra-parens": {
-			"active": 1,
-			"optionString": "'all', {'conditionalAssign': false, 'returnAssign': false, 'nestedBinaryExpressions': false, 'ignoreJSX': 'none'}"
+			"active": 0,
+			"optionString": "'all', {'conditionalAssign': false, 'returnAssign': false, 'nestedBinaryExpressions': false, 'ignoreJSX': 'none', 'enforceForArrowConditionals': false}"
 			},
 		"no-extra-semi": {
 			"active": 1,
@@ -1981,7 +1427,7 @@
 			"optionString": ""
 			},
 		"no-global-assign": {
-			"active": 0,
+			"active": 1,
 			"optionString": "{'exceptions': []}"
 			},
 		"no-implicit-coercion": {
@@ -2140,6 +1586,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-prototype-builtins": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-redeclare": {
 			"active": 1,
 			"optionString": "{'builtinGlobals': false}"
@@ -2185,7 +1635,7 @@
 			"optionString": "{'props': false}"
 			},
 		"no-self-compare": {
-			"active": 1,
+			"active": 0,
 			"optionString": ""
 			},
 		"no-sequences": {
@@ -2206,14 +1656,14 @@
 			},
 		"no-sync": {
 			"active": 0,
-			"optionString": ""
+			"optionString": "{'allowAtRootLevel': false}"
 			},
 		"no-tabs": {
 			"active": 0,
 			"optionString": ""
 			},
 		"no-template-curly-in-string": {
-			"active": 1,
+			"active": 0,
 			"optionString": ""
 			},
 		"no-ternary": {
@@ -2230,7 +1680,7 @@
 			},
 		"no-trailing-spaces": {
 			"active": 0,
-			"optionString": "{'skipBlankLines': false}"
+			"optionString": "{'skipBlankLines': false, 'ignoreComments': false}"
 			},
 		"no-undef": {
 			"active": 1,
@@ -2246,7 +1696,7 @@
 			},
 		"no-underscore-dangle": {
 			"active": 0,
-			"optionString": "{'allow': [], 'allowAfterThis': false, 'allowAfterSuper': false}"
+			"optionString": "{'allow': [], 'allowAfterThis': false, 'allowAfterSuper': false, 'enforceInMethodNames': false}"
 			},
 		"no-unexpected-multiline": {
 			"active": 1,
@@ -2269,12 +1719,12 @@
 			"optionString": ""
 			},
 		"no-unsafe-negation": {
-			"active": 0,
+			"active": 1,
 			"optionString": ""
 			},
 		"no-unused-expressions": {
 			"active": 0,
-			"optionString": "{'allowShortCircuit': false, 'allowTernary': false}"
+			"optionString": "{'allowShortCircuit': false, 'allowTernary': false, 'allowTaggedTemplates': false}"
 			},
 		"no-unused-labels": {
 			"active": 1,
@@ -2293,7 +1743,7 @@
 			"optionString": ""
 			},
 		"no-useless-computed-key": {
-			"active": 1,
+			"active": 0,
 			"optionString": ""
 			},
 		"no-useless-concat": {
@@ -2336,6 +1786,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"nonblock-statement-body-position": {
+			"active": 0,
+			"optionString": "'beside'"
+			},
 		"object-curly-newline": {
 			"active": 0,
 			"optionString": "{'ObjectExpression': {'multiline': true}, 'ObjectPattern': {'multiline': true}}"
@@ -2346,7 +1800,7 @@
 			},
 		"object-property-newline": {
 			"active": 0,
-			"optionString": "{'allowMultiplePropertiesPerLine': true}"
+			"optionString": "{'allowAllPropertiesOnSameLine': true}"
 			},
 		"object-shorthand": {
 			"active": 0,
@@ -2371,6 +1825,10 @@
 		"padded-blocks": {
 			"active": 0,
 			"optionString": "{'blocks': 'always', 'switches': 'always', 'classes': 'always'}"
+			},
+		"padding-line-between-statements": {
+			"active": 0,
+			"optionString": "{blankLine: 'always', prev:'*', next:'return'}"
 			},
 		"prefer-arrow-callback": {
 			"active": 0,
@@ -2425,7 +1883,7 @@
 			"optionString": "{'require': {'FunctionDeclaration': true, 'MethodDefinition': false, 'ClassDeclaration': false, 'ArrowFunctionExpression': false}}"
 			},
 		"require-yield": {
-			"active": 0,
+			"active": 1,
 			"optionString": ""
 			},
 		"rest-spread-spacing": {
@@ -2439,6 +1897,10 @@
 		"semi-spacing": {
 			"active": 0,
 			"optionString": "{'before': false, 'after': true}"
+			},
+		"semi-style": {
+			"active": 0,
+			"optionString": "'last'"
 			},
 		"sort-imports": {
 			"active": 0,
@@ -2479,6 +1941,10 @@
 		"strict": {
 			"active": 0,
 			"optionString": "'safe'"
+			},
+		"switch-colon-spacing": {
+			"active": 0,
+			"optionString": "{'after': true, 'before': false}"
 			},
 		"symbol-description": {
 			"active": 0,
@@ -2530,7 +1996,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "http:\/\/timbomckay.dev\/",
+	"externalServerAddress": "http:\/\/timbomckay.localhost\/",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
@@ -2892,7 +2358,8 @@
 		"createSourceMap": 0,
 		"minifyOutput": 1,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 1,
+		"transpilerStyle": 1
 		},
 	"languageDefaultsCSS": {
 		"autoOutputAction": 0,
@@ -2925,6 +2392,7 @@
 		"noEscapeInAttributes": 0,
 		"outputFormat": 2,
 		"outputStyle": 0,
+		"shouldRunCacheBuster": 0,
 		"useCDATA": 0,
 		"useDoubleQuotes": 0,
 		"useUnixNewlines": 0
@@ -2935,19 +2403,21 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
+		"quality": 100
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*.min.js",
-		"autoOutputPathRelativePath": "\/min",
+		"autoOutputPathFilenamePattern": "*-min.js",
+		"autoOutputPathRelativePath": "..\/js",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
 		"createSourceMap": 0,
 		"minifyOutput": 1,
-		"syntaxCheckerStyle": 1,
-		"transpilerStyle": 0
+		"syntaxCheckerStyle": 3,
+		"transpilerStyle": 1
 		},
 	"languageDefaultsJSON": {
 		"autoOutputAction": 1,
@@ -2959,21 +2429,14 @@
 		"orderOutput": 0,
 		"outputStyle": 1
 		},
-	"languageDefaultsJSX": {
-		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*.js",
-		"autoOutputPathRelativePath": "",
-		"autoOutputPathReplace1": "jsx",
-		"autoOutputPathReplace2": "js",
-		"autoOutputPathStyle": 0
-		},
 	"languageDefaultsKIT": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.html",
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "kit",
 		"autoOutputPathReplace2": "html",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsLESS": {
 		"allowInsecureImports": 0,
@@ -3005,22 +2468,23 @@
 		"enableFootnotes": 1,
 		"enableLabels": 1,
 		"enableSmartQuotes": 1,
-		"escapeLineBreaks": 0,
 		"maskEmailAddresses": 1,
 		"outputFormat": 0,
 		"outputStyle": 0,
 		"parseMetadata": 1,
 		"processHTML": 0,
 		"randomFootnoteNumbers": 0,
+		"shouldRunCacheBuster": 0,
 		"useCompatibilityMode": 0
 		},
 	"languageDefaultsOTHER": {
-		"autoOutputAction": 2,
+		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.*",
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsPNG": {
 		"autoOutputAction": 0,
@@ -3028,7 +2492,9 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"optimizerType": 1,
+		"quality": 100
 		},
 	"languageDefaultsPUG": {
 		"autoOutputAction": 0,
@@ -3038,7 +2504,8 @@
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
 		"compileDebug": 1,
-		"outputStyle": 0
+		"outputStyle": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsSASS": {
 		"autoOutputAction": 0,
@@ -3047,10 +2514,10 @@
 		"autoOutputPathReplace1": "sass",
 		"autoOutputPathReplace2": "css",
 		"autoOutputPathStyle": 2,
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"useLibsass": 1
@@ -3066,7 +2533,8 @@
 		"logicless": 0,
 		"outputFormat": 0,
 		"outputStyle": 1,
-		"railsCompatible": 0
+		"railsCompatible": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsSTYLUS": {
 		"autoOutputAction": 0,
@@ -3113,9 +2581,11 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
+	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
-	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
+	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, \/storage\/framework\/sessions, node_modules",
 	"sourceFolderName": "source",
+	"susyVersion": 3,
 	"uglifyDefinesString": "",
 	"uglifyFlags2": {
 		"ascii-only": {
