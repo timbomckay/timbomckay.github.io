@@ -28,4 +28,16 @@ body {
 
 ::selection {
 	background-color: $color-primary;
+  color: white;
+}
+
+// All header fonts
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6, .jumbo {
+	margin-top: 1.325em;
+	margin-bottom: 1em;
+	font-family: $font-heading;
+
+	&:first-child { margin-top: 0; }
+  &:last-child { margin-bottom: 0; }
 }
