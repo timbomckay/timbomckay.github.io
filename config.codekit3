@@ -312,199 +312,177 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/img\/portfolio\/bacon-full.jpg": {
+	"\/img\/portfolio\/bacon.jpg": {
 		"ft": 16384,
-		"iS": 217440,
+		"iS": 135452,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/img\/portfolio\/bacon-full.jpg",
+		"oAP": "\/img\/portfolio\/bacon.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/img\/portfolio\/bacon-thumb.jpg": {
+	"\/img\/portfolio\/cfe.jpg": {
 		"ft": 16384,
-		"iS": 72764,
+		"iS": 48706,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/img\/portfolio\/bacon-thumb.jpg",
+		"oAP": "\/img\/portfolio\/cfe.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/img\/portfolio\/base-theme-full.jpg": {
+	"\/img\/portfolio\/city-of-irvine.jpg": {
 		"ft": 16384,
-		"iS": 150572,
+		"iS": 85638,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/img\/portfolio\/base-theme-full.jpg",
+		"oAP": "\/img\/portfolio\/city-of-irvine.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/img\/portfolio\/base-theme-thumb.jpg": {
+	"\/img\/portfolio\/downunder-horsemanship.jpg": {
 		"ft": 16384,
-		"iS": 61147,
+		"iS": 89594,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/img\/portfolio\/base-theme-thumb.jpg",
+		"oAP": "\/img\/portfolio\/downunder-horsemanship.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/img\/portfolio\/cfe-full.jpg": {
+	"\/img\/portfolio\/hilliard.jpg": {
 		"ft": 16384,
-		"iS": 177267,
+		"iS": 116610,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/img\/portfolio\/cfe-full.jpg",
+		"oAP": "\/img\/portfolio\/hilliard.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/img\/portfolio\/cfe-thumb.jpg": {
+	"\/img\/portfolio\/ket-legislature.jpg": {
 		"ft": 16384,
-		"iS": 60816,
+		"iS": 59957,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/img\/portfolio\/cfe-thumb.jpg",
+		"oAP": "\/img\/portfolio\/ket-legislature.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/img\/portfolio\/downunder-full.jpg": {
+	"\/img\/portfolio\/ket.jpg": {
 		"ft": 16384,
-		"iS": 220002,
+		"iS": 60465,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/img\/portfolio\/downunder-full.jpg",
+		"oAP": "\/img\/portfolio\/ket.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/img\/portfolio\/downunder-thumb.jpg": {
+	"\/img\/portfolio\/louisville-water-company.jpg": {
 		"ft": 16384,
-		"iS": 58048,
+		"iS": 101283,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/img\/portfolio\/downunder-thumb.jpg",
+		"oAP": "\/img\/portfolio\/louisville-water-company.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/img\/portfolio\/hilliard-full.jpg": {
+	"\/img\/portfolio\/louisvilleky.jpg": {
 		"ft": 16384,
-		"iS": 321138,
+		"iS": 104710,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/img\/portfolio\/hilliard-full.jpg",
+		"oAP": "\/img\/portfolio\/louisvilleky.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/img\/portfolio\/hilliard-thumb.jpg": {
+	"\/img\/portfolio\/nettango.jpg": {
 		"ft": 16384,
-		"iS": 90799,
+		"iS": 67856,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/img\/portfolio\/hilliard-thumb.jpg",
+		"oAP": "\/img\/portfolio\/nettango.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/img\/portfolio\/irvine-full.jpg": {
+	"\/img\/portfolio\/orr-safety.jpg": {
 		"ft": 16384,
-		"iS": 326281,
+		"iS": 90472,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/img\/portfolio\/irvine-full.jpg",
+		"oAP": "\/img\/portfolio\/orr-safety.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/img\/portfolio\/irvine-thumb.jpg": {
+	"\/img\/portfolio\/prolift.jpg": {
 		"ft": 16384,
-		"iS": 93925,
+		"iS": 191123,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/img\/portfolio\/irvine-thumb.jpg",
+		"oAP": "\/img\/portfolio\/prolift.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/img\/portfolio\/ket-full.jpg": {
+	"\/img\/portfolio\/sonoma-cutrer.jpg": {
 		"ft": 16384,
-		"iS": 224880,
+		"iS": 68448,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/img\/portfolio\/ket-full.jpg",
+		"oAP": "\/img\/portfolio\/sonoma-cutrer.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/img\/portfolio\/ket-thumb.jpg": {
+	"\/img\/portfolio\/toyota-shop.jpg": {
 		"ft": 16384,
-		"iS": 75017,
+		"iS": 172989,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/img\/portfolio\/ket-thumb.jpg",
+		"oAP": "\/img\/portfolio\/toyota-shop.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/img\/portfolio\/nettango-full.jpg": {
+	"\/img\/portfolio\/toyota.jpg": {
 		"ft": 16384,
-		"iS": 225663,
+		"iS": 108116,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/img\/portfolio\/nettango-full.jpg",
+		"oAP": "\/img\/portfolio\/toyota.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/img\/portfolio\/nettango-thumb.jpg": {
+	"\/img\/portfolio\/zanvartis.jpg": {
 		"ft": 16384,
-		"iS": 73767,
+		"iS": 69781,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/img\/portfolio\/nettango-thumb.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/img\/portfolio\/zanvartis-full.jpg": {
-		"ft": 16384,
-		"iS": 207747,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/img\/portfolio\/zanvartis-full.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/img\/portfolio\/zanvartis-thumb.jpg": {
-		"ft": 16384,
-		"iS": 49297,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/img\/portfolio\/zanvartis-thumb.jpg",
+		"oAP": "\/img\/portfolio\/zanvartis.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -545,6 +523,19 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"\/scss\/_portfolio.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/css\/_portfolio.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/scss\/_typography.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -584,11 +575,11 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"\/Tim-McKay-Resume.pdf": {
+	"\/Tim-Mckay-Resume.pdf": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/Tim-McKay-Resume.pdf",
+		"oAP": "\/Tim-Mckay-Resume.pdf",
 		"oF": 0
 		}
 	},
