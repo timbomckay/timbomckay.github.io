@@ -26,12 +26,18 @@ new Vue({
   },
   methods: {
     trackEvent: function(desc, event) {
-      gtag('send', 'event', {
+      gtag('send', {
+        hitType: 'event',
         eventCategory: 'Outbound Link',
         eventAction: event || 'click',
-        eventLabel: desc,
-        transport: 'beacon'
+        eventLabel: desc
       });
+      // ga('send', {
+      //   hitType: 'event',
+      //   eventCategory: 'Videos',
+      //   eventAction: 'play',
+      //   eventLabel: 'Fall Campaign'
+      // });
     },
     showModal: function(entry) {
       this.active = this.entries[entry];
