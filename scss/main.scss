@@ -22,4 +22,10 @@ img {
   padding: 0.5rem;
 }
 
+.btn {
+  // font-family: $font-sans;
+  font-weight: 900;
+}
+
 @import "portfolio.scss";
+@import "modal.scss";

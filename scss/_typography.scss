@@ -7,10 +7,10 @@
 
 html {
 	// Setting dynamic REM size
-	$min-fs : 14px; // Minimum Font Size
-	$max-fs : 21px; // Maximum Font Size
-	$min-vw : 560px; // Minimum Window width
-	$max-vw : 1336px; // Maximum Window width
+	$min-fs : 16px; // Minimum Font Size
+	$max-fs : 19px; // Maximum Font Size
+	$min-vw : 600px; // Minimum Window width
+	$max-vw : 1240px; // Maximum Window width
 
 	font-size: calc((100vw - #{$min-vw}) / #{strip-units($max-vw - $min-vw)} * #{strip-units($max-fs - $min-fs)} + #{$min-fs});
   @media (max-width: $min-vw) { font-size: $min-fs; }
@@ -19,7 +19,7 @@ html {
 
 body {
   font-family: $font-sans;
-  line-height: 1.75;
+  line-height: 1.5;
   letter-spacing: 0.01875em;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;

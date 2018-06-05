@@ -1,0 +1,191 @@
+{
+  "tmhushop": {
+    "title": "Toyota Forklifts Shop",
+    "url": "https://www.toyotaforklift.com/shop",
+    "images": [
+      "img/portfolio/toyota-shop.jpg",
+      "img/portfolio/toyota-shop.jpg",
+      "img/portfolio/toyota-shop.jpg"
+    ],
+    "desc": [
+      "Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget urna mollis ornare vel eu leo. Sed posuere consectetur est at lobortis. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.",
+      "Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla."
+    ],
+    "meta": {
+      "tags": ["VueJS","E-Commerce"],
+      "year": "2018"
+    }
+  },
+  "tmhu": {
+    "title": "Toyota Forklifts",
+    "url": "https://www.toyotaforklift.com",
+    "images": [
+      "img/portfolio/toyota.jpg"
+    ],
+    "desc": [
+      "I did a thing.",
+      "It was pretty cool."
+    ],
+    "meta": {
+      "tags": ["VueJS","WordPress"],
+      "year": "2018"
+    }
+  },
+  "sonomacutrer": {
+    "title": "Sonoma-Cutrer",
+    "url": "https://www.sonomacutrer.com",
+    "images": [
+      "img/portfolio/sonoma-cutrer.jpg"
+    ],
+    "desc": [],
+    "meta": {
+      "tags": ["VueJS","WordPress"],
+      "year": "2018"
+    }
+  },
+  "prolift": {
+    "title": "Prolift Equipment",
+    "url": "https://proliftequipment.com/",
+    "images": [
+      "img/portfolio/prolift.jpg"
+    ],
+    "desc": [],
+    "meta": {
+      "tags": ["WordPress"],
+      "year": "2018"
+    }
+  },
+  "orrsafety": {
+    "title": "ORR Safety",
+    "url": "https://www.orrsafety.com/",
+    "images": [
+      "img/portfolio/sonoma-cutrer.jpg"
+    ],
+    "desc": [],
+    "meta": {
+      "tags": ["VueJS","WordPress"],
+      "year": "2018"
+    }
+  },
+  "downunder": {
+    "title": "Downunder Horsemanship",
+    "url": "https://downunderhorsemanship.com/",
+    "images": [
+      "img/portfolio/downunder-horsemanship.jpg"
+    ],
+    "desc": [],
+    "meta": {
+      "tags": ["VueJS","WordPress"],
+      "year": "2018"
+    }
+  },
+  "cfe": {
+    "title": "CFE",
+    "url": "https://cfe.econ.jhu.edu/",
+    "images": [
+      "img/portfolio/cfe.jpg"
+    ],
+    "desc": [],
+    "meta": {
+      "tags": ["WordPress"],
+      "year": "2018"
+    }
+  },
+  "ket": {
+    "title": "KET",
+    "url": "https://www.ket.org",
+    "images": [
+      "img/portfolio/ket.jpg",
+      "img/portfolio/ket-legislature.jpg"
+    ],
+    "desc": [],
+    "meta": {
+      "tags": ["WordPress"],
+      "year": "2018"
+    }
+  },
+  "thebacon": {
+    "title": "The Bacon",
+    "url": false,
+    "images": [
+      "img/portfolio/bacon.jpg"
+    ],
+    "desc": [],
+    "meta": {
+      "tags": [],
+      "year": "2018"
+    }
+  },
+  "cityofirvine": {
+    "title": "City of Irvine",
+    "url": "http://www.cityofirvine.org/",
+    "images": [
+      "img/portfolio/city-of-irvine.jpg"
+    ],
+    "desc": [],
+    "meta": {
+      "tags": [],
+      "year": "2018"
+    }
+  },
+  "louisvilleky": {
+    "title": "Louisville, Ky",
+    "url": "https://louisvilleky.gov",
+    "images": [
+      "img/portfolio/louisvilleky.jpg"
+    ],
+    "desc": [],
+    "meta": {
+      "tags": [],
+      "year": "2018"
+    }
+  },
+  "hilliardlyons": {
+    "title": "Hilliard Lyons",
+    "url": false,
+    "images": [
+      "img/portfolio/hilliard.jpg"
+    ],
+    "desc": [],
+    "meta": {
+      "tags": ["VueJS","WordPress"],
+      "year": "2018"
+    }
+  },
+  "nettango": {
+    "title": "Net Tango",
+    "url": "http://www.nettango.com",
+    "images": [
+      "img/portfolio/nettango.jpg"
+    ],
+    "desc": [],
+    "meta": {
+      "tags": ["WordPress"],
+      "year": "2018"
+    }
+  },
+  "louisvillewater": {
+    "title": "Louisville Water",
+    "url": "http://www.louisvillewater.com/",
+    "images": [
+      "img/portfolio/louisville-water-company.jpg"
+    ],
+    "desc": [],
+    "meta": {
+      "tags": [],
+      "year": "2018"
+    }
+  },
+  "zanvartis": {
+    "title": "Zanvartis",
+    "url": "http://www.nettango.com/projects/zanvartis/",
+    "images": [
+      "img/portfolio/zanvartis.jpg"
+    ],
+    "desc": [],
+    "meta": {
+      "tags": [],
+      "year": "2018"
+    }
+  }
+}

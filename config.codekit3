@@ -16,22 +16,40 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
-	"\/css\/main.css": {
+	"\/dist\/entries.min.json": {
+		"ft": 524288,
+		"oA": 0,
+		"oAP": "\/dist\/entries.min.min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/dist\/main.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/css\/main-min.css",
+		"oAP": "\/dist\/main.min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"\/css\/main.css.map": {
+	"\/dist\/main.css.map": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/css\/main.css.map",
+		"oAP": "\/dist\/main.css.map",
 		"oF": 0
+		},
+	"\/dist\/main.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/main.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
 		},
 	"\/img\/favicons\/android-icon-144x144.png": {
 		"ft": 32768,
@@ -262,8 +280,8 @@
 		},
 	"\/img\/favicons\/manifest.json": {
 		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/img\/favicons\/manifest-min.json",
+		"oA": 0,
+		"oAP": "\/dist\/manifest.min.json",
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
@@ -506,12 +524,20 @@
 		"oAP": "\/index.html",
 		"oF": 0
 		},
+	"\/js\/entries.json": {
+		"ft": 524288,
+		"oA": 0,
+		"oAP": "\/dist\/entries.min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"\/js\/main.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/js\/main-min.js",
+		"oAP": "\/dist\/main.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -534,6 +560,19 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"\/scss\/_modal.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/dist\/_modal.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/scss\/_portfolio.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -542,7 +581,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/css\/_portfolio.css",
+		"oAP": "\/dist\/_portfolio.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -555,7 +594,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/css\/_typography.css",
+		"oAP": "\/dist\/_typography.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -568,7 +607,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/css\/_variables.css",
+		"oAP": "\/dist\/_variables.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -581,7 +620,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "\/css\/main.css",
+		"oAP": "\/dist\/main.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -607,7 +646,7 @@
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
-	"alwaysUseExternalServer": 1,
+	"alwaysUseExternalServer": 0,
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
@@ -1313,7 +1352,7 @@
 			"optionString": "{'allowParens': false}"
 			},
 		"no-console": {
-			"active": 1,
+			"active": 0,
 			"optionString": "{'allow': ['warn', 'error']}"
 			},
 		"no-const-assign": {
@@ -2365,11 +2404,11 @@
 		},
 	"languageDefaultsCSS": {
 		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*-min.css",
-		"autoOutputPathRelativePath": "",
+		"autoOutputPathFilenamePattern": "*.min.css",
+		"autoOutputPathRelativePath": "dist",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0,
+		"autoOutputPathStyle": 1,
 		"createSourceMap": 0,
 		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
@@ -2411,23 +2450,23 @@
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*-min.js",
-		"autoOutputPathRelativePath": "..\/js",
+		"autoOutputPathFilenamePattern": "*.min.js",
+		"autoOutputPathRelativePath": "dist",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0,
+		"autoOutputPathStyle": 1,
 		"createSourceMap": 0,
 		"minifyOutput": 1,
 		"syntaxCheckerStyle": 3,
 		"transpilerStyle": 1
 		},
 	"languageDefaultsJSON": {
-		"autoOutputAction": 1,
-		"autoOutputPathFilenamePattern": "*-min.json",
-		"autoOutputPathRelativePath": "",
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.min.json",
+		"autoOutputPathRelativePath": "dist",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0,
+		"autoOutputPathStyle": 1,
 		"orderOutput": 0,
 		"outputStyle": 1
 		},
@@ -2512,10 +2551,10 @@
 	"languageDefaultsSASS": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.css",
-		"autoOutputPathRelativePath": "..\/css",
+		"autoOutputPathRelativePath": "dist",
 		"autoOutputPathReplace1": "sass",
 		"autoOutputPathReplace2": "css",
-		"autoOutputPathStyle": 2,
+		"autoOutputPathStyle": 1,
 		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
