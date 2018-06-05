@@ -1,5 +1,5 @@
 // JavaScript
-/*global gtag, Vue */
+/*global ga, Vue */
 
 // register modal component
 Vue.component('modal', {
@@ -26,8 +26,8 @@ new Vue({
   },
   methods: {
     trackEvent: function(desc, event) {
-      gtag('send', 'event', {
-        eventCategory: 'gtag : Outbound Link',
+      ga('send', 'event', {
+        eventCategory: 'Outbound Link',
         eventAction: event || 'click',
         eventLabel: desc,
         transport: 'beacon'
