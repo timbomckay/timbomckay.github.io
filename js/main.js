@@ -6,7 +6,7 @@ Vue.component('modal', {
   template: '#modal-template'
 })
 
-Vue.config.devtools = true
+// Vue.config.devtools = true
 
 // start app
 new Vue({
