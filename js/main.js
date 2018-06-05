@@ -1,5 +1,5 @@
 // JavaScript
-/*global gtag, Vue */
+/*global gtag, ga, Vue */
 
 // register modal component
 Vue.component('modal', {
@@ -26,18 +26,18 @@ new Vue({
   },
   methods: {
     trackEvent: function(desc, event) {
-      gtag('send', {
-        hitType: 'event',
+      gtag('send', 'event', {
         eventCategory: 'Outbound Link',
         eventAction: event || 'click',
-        eventLabel: desc
+        eventLabel: desc,
+        transport: 'beacon'
       });
-      // ga('send', {
-      //   hitType: 'event',
-      //   eventCategory: 'Videos',
-      //   eventAction: 'play',
-      //   eventLabel: 'Fall Campaign'
-      // });
+      ga('send', 'event', {
+        eventCategory: 'Outbound Link',
+        eventAction: event || 'click',
+        eventLabel: desc,
+        transport: 'beacon'
+      });
     },
     showModal: function(entry) {
       this.active = this.entries[entry];
