@@ -3,8 +3,6 @@
     "title": "Toyota Forklifts Shop",
     "url": "https://www.toyotaforklift.com/shop",
     "images": [
-      "img/portfolio/toyota-shop.jpg",
-      "img/portfolio/toyota-shop.jpg",
       "img/portfolio/toyota-shop.jpg"
     ],
     "desc": [
@@ -13,7 +11,7 @@
     ],
     "meta": {
       "tags": ["VueJS","E-Commerce"],
-      "year": "2018"
+      "date": "2018"
     }
   },
   "tmhu": {
@@ -28,7 +26,7 @@
     ],
     "meta": {
       "tags": ["VueJS","WordPress"],
-      "year": "2018"
+      "date": "2018"
     }
   },
   "sonomacutrer": {
@@ -40,7 +38,7 @@
     "desc": [],
     "meta": {
       "tags": ["VueJS","WordPress"],
-      "year": "2018"
+      "date": "2018"
     }
   },
   "prolift": {
@@ -52,7 +50,7 @@
     "desc": [],
     "meta": {
       "tags": ["WordPress"],
-      "year": "2018"
+      "date": "2018"
     }
   },
   "orrsafety": {
@@ -64,7 +62,7 @@
     "desc": [],
     "meta": {
       "tags": ["VueJS","WordPress"],
-      "year": "2018"
+      "date": "2018"
     }
   },
   "downunder": {
@@ -73,10 +71,12 @@
     "images": [
       "img/portfolio/downunder-horsemanship.jpg"
     ],
-    "desc": [],
+    "desc": [
+      "Taking a supplied design and adapting to WordPress. Creating a responsive website with a very complex and intricate page layout system to meet all of their needs and easily maintain content. Working with multiple video providers for displaying on the page responsively with stylized controls."
+    ],
     "meta": {
       "tags": ["VueJS","WordPress"],
-      "year": "2018"
+      "date": "August 2016"
     }
   },
   "cfe": {
@@ -85,10 +85,12 @@
     "images": [
       "img/portfolio/cfe.jpg"
     ],
-    "desc": [],
+    "desc": [
+      "Created a WordPress site to display a list of articles, defining a pattern for categories to be listed in the array with a conditional for filler tiles to complete the grid. Featuring an AJAX loader to get more posts with the same pattern array which updates the url so the back & refresh buttons operate appropriately. Focused primarily on presenting the article as most visitors will be coming from the newsletter or social media straight to the article, designing a content-centered layout so the reader is free from distractions and a pleasant reading experience."
+    ],
     "meta": {
       "tags": ["WordPress"],
-      "year": "2018"
+      "date": "November 2016"
     }
   },
   "ket": {
@@ -98,10 +100,12 @@
       "img/portfolio/ket.jpg",
       "img/portfolio/ket-legislature.jpg"
     ],
-    "desc": [],
+    "desc": [
+      "I developed the legislature of their site by incorporating their data source for program showtimes into the site with functionality for best viewing options, using the api to list out previous, current and future episodes. I've made various style updates to the site as a whole. Collaborated on the live-banner to notify the visitor of shows currently airing and integrating cookies to hide a program if the visitor wasn't interested. Cleared up an issue with their Google Ads displaying inconsistently due to bloated javascript."
+    ],
     "meta": {
       "tags": ["WordPress"],
-      "year": "2018"
+      "date": "2015-2017"
     }
   },
   "thebacon": {
@@ -110,10 +114,13 @@
     "images": [
       "img/portfolio/bacon.jpg"
     ],
-    "desc": [],
+    "desc": [
+      "Updating quote forms for better user functionality along with some various style & layout updates. Taking the design for the front facing site and integrating across the Rails app.",
+      "<i>**Site has since been redesigned</i>"
+    ],
     "meta": {
       "tags": [],
-      "year": "2018"
+      "date": "October 2016"
     }
   },
   "cityofirvine": {
@@ -122,10 +129,12 @@
     "images": [
       "img/portfolio/city-of-irvine.jpg"
     ],
-    "desc": [],
+    "desc": [
+      "Designed and developed this site using Drupal for the CMS. Focusing on accessibility with color contrast and font-sizes while maintaining an attractive site. Wrote a script for a more font-size controls and language toggle, along with a rather complex responsive main menu."
+    ],
     "meta": {
       "tags": [],
-      "year": "2018"
+      "date": "February 2015"
     }
   },
   "louisvilleky": {
@@ -137,7 +146,7 @@
     "desc": [],
     "meta": {
       "tags": [],
-      "year": "2018"
+      "date": "2018"
     }
   },
   "hilliardlyons": {
@@ -146,10 +155,12 @@
     "images": [
       "img/portfolio/hilliard.jpg"
     ],
-    "desc": [],
+    "desc": [
+      "Created a new look for based on new promotional material to be used across their multiple sites. Non-responsive site built on asp.net."
+    ],
     "meta": {
       "tags": ["VueJS","WordPress"],
-      "year": "2018"
+      "date": "2016"
     }
   },
   "nettango": {
@@ -158,10 +169,12 @@
     "images": [
       "img/portfolio/nettango.jpg"
     ],
-    "desc": [],
+    "desc": [
+      "Handled the design & development of the new company portfolio site with WordPress integration. Optimizing the admin area for a better content management experience."
+    ],
     "meta": {
-      "tags": ["WordPress"],
-      "year": "2018"
+      "tags": ["WordPress", "Design"],
+      "date": "April 2014"
     }
   },
   "louisvillewater": {
@@ -173,7 +186,7 @@
     "desc": [],
     "meta": {
       "tags": [],
-      "year": "2018"
+      "date": "2018"
     }
   },
   "zanvartis": {
@@ -182,10 +195,13 @@
     "images": [
       "img/portfolio/zanvartis.jpg"
     ],
-    "desc": [],
+    "desc": [
+      "Designing and developing a proof of concept portfolio piece for a pharmaceutical sales dashboard. Designed the logo, graph, table & date picker and developed all the user experience functionalities.",
+      "<i>**Site is no longer active**</i>"
+    ],
     "meta": {
-      "tags": [],
-      "year": "2018"
+      "tags": ["Concept"],
+      "date": "May 2014"
     }
   }
 }
