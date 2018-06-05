@@ -2,15 +2,14 @@
 <html lang="en">
 
 <head>
-
-  <!-- Google Analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-4903782-9"></script>
   <script>
-  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-  ga('create', 'UA-4903782-9', 'auto');
-  ga('send', 'pageview');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-4903782-9');
   </script>
-  <script async src='https://www.google-analytics.com/analytics.js'></script>
-  <!-- End Google Analytics -->
 
   <!-- COMMON TAGS -->
   <meta charset="utf-8">
@@ -269,7 +268,7 @@
           <p v-if="active.desc" v-for="desc in active.desc" v-html="desc"></p>
         </div>
       </div>
-      <a v-if="active.url" slot="footer" :href="active.url" class="btn btn-primary btn-sm" @click="trackEvent(active.title, 'Visit Project')" target="_new">Visit <i class="ml-1 fas fa-angle-right"></i></a>
+      <a v-if="active.url" slot="footer" :href="active.url" class="btn btn-primary btn-sm" @click="trackEvent(active.title,'visit','project')" target="_new">Visit <i class="ml-1 fas fa-angle-right"></i></a>
     </modal>
 
   </div>
