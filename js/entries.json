@@ -30,10 +30,10 @@
     "images": [
       "img/portfolio/sonoma--home.jpg"
     ],
-    "desc": "",
+    "desc": "<p>The team at Blackstone Media redesigned and developed the new look for Sonoma-Cutrer Vineyards. I aided in developing templates, altering the checkout styles to match the new design as much as the service would allow, and refining styles for consistency.</p>",
     "meta": {
-      "tags": ["Front-End Development","WordPress"],
-      "date": "2018"
+      "tags": ["Front-End Development","WordPress","E-Commerce"],
+      "date": "July 2017"
     }
   },
   "prolift": {
@@ -43,10 +43,10 @@
       "img/portfolio/prolift--home.jpg",
       "img/portfolio/prolift--locations.jpg"
     ],
-    "desc": "",
+    "desc": "<p>asdf</p>",
     "meta": {
-      "tags": ["WordPress"],
-      "date": "2018"
+      "tags": ["Front-End Development","WordPress","ACF Architecture","WP REST API"],
+      "date": "June 2017"
     }
   },
   "orrsafety": {
@@ -55,9 +55,9 @@
     "images": [
       "img/portfolio/ors--home.jpg"
     ],
-    "desc": "",
+    "desc": "<p>asdf</p>",
     "meta": {
-      "tags": ["Front-End Development","WordPress"],
+      "tags": ["Front-End Development"],
       "date": "2018"
     }
   },
@@ -131,7 +131,7 @@
     "images": [
       "img/portfolio/louisville-metro--home.jpg"
     ],
-    "desc": "",
+    "desc": "<p>asdf</p>",
     "meta": {
       "tags": [],
       "date": "2018"
