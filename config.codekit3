@@ -385,6 +385,28 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/img\/portfolio\/downunder--academy.jpg": {
+		"ft": 16384,
+		"iS": 57669,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/portfolio\/downunder--academy.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/portfolio\/downunder--events.jpg": {
+		"ft": 16384,
+		"iS": 109588,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/portfolio\/downunder--events.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/img\/portfolio\/downunder--thumb.jpg": {
 		"ft": 16384,
 		"iS": 89594,
@@ -805,6 +827,13 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
+		},
+	"\/Letter-of-Recommendation.pdf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/Letter-of-Recommendation.pdf",
+		"oF": 0
 		},
 	"\/README.md": {
 		"cB": 0,
