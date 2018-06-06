@@ -93,7 +93,7 @@
           <a href="#" class="portfolio-piece" @click.prevent="showModal('tmhushop')">
             <div class="portfolio-hover">
               <h2 class="portfolio-title">Toyota Forklifts Shop <i class="fas fa-angle-right text-primary"></i></h2>
-              <p class="text-primary">Vue JS • E-Commerce</p>
+              <p class="text-primary">Vue JS • E-Commerce • SAP Hybris</p>
             </div>
             <img src="img/portfolio/tmhu-shop--thumb.jpg" alt="">
           </a>
@@ -256,13 +256,22 @@
     </footer>
 
     <modal v-if="active" @close="active = false">
-      <h3 slot="header" class="modal-pf-title">{{ active.title }}</h3>
+      <div slot="header">
+        <h3 class="modal-pf-title mb-0">{{ active.title }}</h3>
+        <p v-if="active.meta.date" class="text-primary mt-1">{{ active.meta.date }}</p>
+      </div>
       <div slot="body" class="row justify-content-center m-0 w-100">
         <div class="col-md modal-pf-gallery">
           <img v-if="active.images" v-for="image in active.images" :src="image" class="mw-100" />
         </div>
-        <div class="col-md modal-pf-desc">
-          <p v-if="active.desc" v-for="desc in active.desc" v-html="desc"></p>
+        <div class="col-md modal-pf-desc" contenteditable>
+          <div v-html="active.desc"></div>
+          <div v-if="active.meta.tags && active.meta.tags.length" class="mt-4">
+            <h6>Highlights</h6>
+            <ul>
+              <li v-for="tag in active.meta.tags" v-html="tag"></li>
+            </ul>
+          </div>
         </div>
       </div>
       <a v-if="active.url" slot="footer" :href="active.url" class="btn btn-primary btn-sm" @click="trackEvent(active.title,'visit','project')" target="_new">Visit <i class="ml-1 fas fa-angle-right"></i></a>

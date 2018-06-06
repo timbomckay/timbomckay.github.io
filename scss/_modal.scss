@@ -12,10 +12,15 @@
     padding: 1rem;
   }
 
+  &-header {
+    display: block;
+  }
+
   &-header,
   &-footer {
     flex: 0 0 auto;
     justify-content: center;
+    text-align: center;
   }
   &-body {
     padding: 0;
@@ -28,21 +33,33 @@
     color: $color-text;
   }
 
-  &-pf-gallery,
-  &-pf-desc {
-    padding: 1rem;
-    overflow-y: auto;
-  }
-
   &-pf-gallery {
+    padding: 0;
     text-align: center;
+    overflow-y: auto;
+    background-color: whitesmoke;
+
+    > img {
+      width: 100%;
+      &:not(:first-child) {
+        margin-top: 1rem;
+        border-top: 1px solid #e9ecef;
+      }
+      &:not(:last-child) {
+        border-bottom: 1px solid #e0e0e0;
+      }
+    }
+
   }
 
   &-pf-desc {
+    padding: 2rem;
+    font-size: 0.9rem;
     max-width:24rem;
+    overflow-y: auto;
 
     @media (min-width: 768px) {
-      border-left: 1px solid #e9ecef;
+      border-left: 1px solid #e0e0e0;
     }
   }
 
