@@ -349,7 +349,7 @@
 		"oAP": "\/img\/portfolio\/bacon--thumb.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/portfolio\/cfe--article.jpg": {
@@ -413,17 +413,6 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/portfolio\/downunder--thumb.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/img\/portfolio\/hilliard--thumb.jpg": {
-		"ft": 16384,
-		"iS": 116610,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/img\/portfolio\/hilliard--thumb.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -633,28 +622,6 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/portfolio\/prolift--thumb.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/img\/portfolio\/randomizr--list.jpg": {
-		"ft": 16384,
-		"iS": 39881,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/img\/portfolio\/randomizr--list.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/img\/portfolio\/randomizr--selection.jpg": {
-		"ft": 16384,
-		"iS": 218949,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/img\/portfolio\/randomizr--selection.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

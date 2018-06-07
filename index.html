@@ -74,9 +74,9 @@
 
   <div id="app">
 
-    <nav class="navbar navbar-expand-sm fixed-top navbar-light bg-light">
+    <nav class="navbar navbar-expand-sm fixed-top navbar-light bg-white">
       <div class="container-fluid">
-        <span class="navbar-brand mb-0">Tim McKay Portfolio</span>
+        <div class="mb-0 d-inline-flex align-items-center"><span class="text-primary" style="font-weight:600;font-size:1.125rem;">Tim McKay</span> <span class="text-secondary ml-2 text-uppercase" style="font-size:0.9em;letter-spacing: 0.05em;">Portfolio</span></div>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link" target="_new" href="https://www.linkedin.com/in/timbomckay/" @click="trackEvent('linkedin')"><i class="fab fa-linkedin"></i></a></li>
@@ -87,8 +87,13 @@
       </div>
     </nav>
 
-    <section id="portfolio" class="container-fluid portfolio">
+    <section class="container-fluid py-5 text-center">
+      <h1 class="d-inline-block text-capitalize" style="max-width: 46rem;">A design-centric developer focused on quality products</h1>
+    </section>
+
+    <section id="portfolio" class="container-fluid portfolio pt-0">
       <div class="row text-center">
+        <!-- Featured Row -->
         <div class="col-md-12">
           <a href="#" class="portfolio-piece" @click.prevent="showModal('tmhushop')">
             <div class="portfolio-hover">
@@ -98,6 +103,7 @@
             <img src="img/portfolio/tmhu-shop--thumb.jpg" alt="">
           </a>
         </div>
+        <!-- Two Column Row -->
         <div class="col-md-6">
           <a href="#" class="portfolio-piece" @click.prevent="showModal('tmhu')">
             <div class="portfolio-hover">
@@ -108,14 +114,15 @@
           </a>
         </div>
         <div class="col-md-6">
-          <a href="#" class="portfolio-piece" @click.prevent="showModal('sonomacutrer')">
+          <a href="#" class="portfolio-piece" @click.prevent="showModal('randomizr')">
             <div class="portfolio-hover">
-              <h3 class="portfolio-title">Sonoma-Cutrer <i class="fas fa-angle-right text-primary"></i></h3>
-              <p class="text-primary">Front-End Development • E-Commerce</p>
+              <h3 class="portfolio-title">Randomizr <i class="fas fa-angle-right text-primary"></i></h3>
+              <p class="text-primary">VueJS • Personal</p>
             </div>
-            <img src="img/portfolio/sonoma--thumb.jpg" alt="">
+            <img src="img/portfolio/randomizr--list.jpg" alt="">
           </a>
         </div>
+        <!-- Three Column Row -->
         <div class="col-md-4">
           <a href="#" class="portfolio-piece" @click.prevent="showModal('prolift')">
             <div class="portfolio-hover">
@@ -125,6 +132,44 @@
             <img src="img/portfolio/prolift--thumb.jpg" alt="">
           </a>
         </div>
+        <div class="col-md-4">
+          <a href="#" class="portfolio-piece" @click.prevent="showModal('sojournint')">
+            <div class="portfolio-hover">
+              <h3 class="portfolio-title">Sojourn International <i class="fas fa-angle-right text-primary"></i></h3>
+              <p class="text-primary">Front-End Development • Design</p>
+            </div>
+            <img src="img/portfolio/sojourn-international--thumb.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#" class="portfolio-piece" @click.prevent="showModal('cfe')">
+            <div class="portfolio-hover">
+              <h3 class="portfolio-title">CFE <i class="fas fa-angle-right text-primary"></i></h3>
+              <p class="text-primary">Front-End Development • WordPress • Design</p>
+            </div>
+            <img src="img/portfolio/cfe--thumb.jpg" alt="">
+          </a>
+        </div>
+        <!-- Two Column Row -->
+        <div class="col-md-6">
+          <a href="#" class="portfolio-piece" @click.prevent="showModal('sonomacutrer')">
+            <div class="portfolio-hover">
+              <h3 class="portfolio-title">Sonoma-Cutrer <i class="fas fa-angle-right text-primary"></i></h3>
+              <p class="text-primary">Front-End Development • E-Commerce</p>
+            </div>
+            <img src="img/portfolio/sonoma--thumb.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-6">
+          <a href="#" class="portfolio-piece" @click.prevent="showModal('ket')">
+            <div class="portfolio-hover">
+              <h3 class="portfolio-title">KET <i class="fas fa-angle-right text-primary"></i></h3>
+              <p class="text-primary">Front-End Development • TV Programming • WordPress</p>
+            </div>
+            <img src="img/portfolio/ket--thumb.jpg" alt="">
+          </a>
+        </div>
+        <!-- Three Column Row -->
         <div class="col-md-4">
           <a href="#" class="portfolio-piece" @click.prevent="showModal('orrsafety')">
             <div class="portfolio-hover">
@@ -143,33 +188,6 @@
             <img src="img/portfolio/downunder--thumb.jpg" alt="">
           </a>
         </div>
-        <div class="col-md-6">
-          <a href="#" class="portfolio-piece" @click.prevent="showModal('cfe')">
-            <div class="portfolio-hover">
-              <h3 class="portfolio-title">CFE <i class="fas fa-angle-right text-primary"></i></h3>
-              <p class="text-primary">Front-End Development • WordPress • Design</p>
-            </div>
-            <img src="img/portfolio/cfe--thumb.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-6">
-          <a href="#" class="portfolio-piece" @click.prevent="showModal('ket')">
-            <div class="portfolio-hover">
-              <h3 class="portfolio-title">KET <i class="fas fa-angle-right text-primary"></i></h3>
-              <p class="text-primary">Front-End Development • TV Programming • WordPress</p>
-            </div>
-            <img src="img/portfolio/ket--thumb.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a href="#" class="portfolio-piece" @click.prevent="showModal('thebacon')">
-            <div class="portfolio-hover">
-              <h3 class="portfolio-title">The Bacon <i class="fas fa-angle-right text-primary"></i></h3>
-              <p class="text-primary">Front-End Development • Ruby on Rails</p>
-            </div>
-            <img src="img/portfolio/bacon--thumb.jpg" alt="">
-          </a>
-        </div>
         <div class="col-md-4">
           <a href="#" class="portfolio-piece" @click.prevent="showModal('cityofirvine')">
             <div class="portfolio-hover">
@@ -179,22 +197,14 @@
             <img src="img/portfolio/irvine--thumb.jpg" alt="">
           </a>
         </div>
-        <div class="col-md-4">
-          <a href="#" class="portfolio-piece" @click.prevent="showModal('louisvilleky')">
-            <div class="portfolio-hover">
-              <h3 class="portfolio-title">Louisville Metro <i class="fas fa-angle-right text-primary"></i></h3>
-              <p class="text-primary">Design • Government</p>
-            </div>
-            <img src="img/portfolio/louisville-metro--thumb.jpg" alt="">
-          </a>
-        </div>
+        <!-- Four Column Row -->
         <div class="col-md-3">
-          <a href="#" class="portfolio-piece" @click.prevent="showModal('hilliardlyons')">
+          <a href="#" class="portfolio-piece" @click.prevent="showModal('thebacon')">
             <div class="portfolio-hover">
-              <h3 class="portfolio-title">Hilliard Lyons <i class="fas fa-angle-right text-primary"></i></h3>
-              <p class="text-primary">Front-End Development • Design</p>
+              <h3 class="portfolio-title">The Bacon <i class="fas fa-angle-right text-primary"></i></h3>
+              <p class="text-primary">Front-End Development • Ruby on Rails</p>
             </div>
-            <img src="img/portfolio/hilliard--thumb.jpg" alt="">
+            <img src="img/portfolio/bacon--thumb.jpg" alt="">
           </a>
         </div>
         <div class="col-md-3">
@@ -207,12 +217,12 @@
           </a>
         </div>
         <div class="col-md-3">
-          <a href="#" class="portfolio-piece" @click.prevent="showModal('louisvillewater')">
+          <a href="#" class="portfolio-piece" @click.prevent="showModal('louisvillemetro')">
             <div class="portfolio-hover">
-              <h3 class="portfolio-title">Louisville Water <i class="fas fa-angle-right text-primary"></i></h3>
-              <p class="text-primary">Front-End Development • Design</p>
+              <h3 class="portfolio-title">Louisville Metro <i class="fas fa-angle-right text-primary"></i></h3>
+              <p class="text-primary">Design • Government</p>
             </div>
-            <img src="img/portfolio/lwc--thumb.jpg" alt="">
+            <img src="img/portfolio/louisville-metro--thumb.jpg" alt="">
           </a>
         </div>
         <div class="col-md-3">
@@ -231,15 +241,14 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">About Me</h2>
-            <!-- <h3 class="section-subheading text-muted"></h3> -->
+            <h2>ABOUT ME</h2>
           </div>
           <div class="col" style="max-width: 32rem;">
             <p>I am a simplifier, I love making things easier for anyone I can help. Whether it’s an intuitive architecture to improve maintainability, automating tasks for coworkers, simplifying content management for clients, or creating fast & pleasant experiences for users. I even seek ways to simplify my wife’s daily tasks, researching solutions for my friends out of curiosity, or setting up technical devices for my parents to minimize complexities. At the core of what makes me an exceptional front-end developer is the desire to help others by creating an enjoyable experience.</p>
             <p>I am a design-centric developer focused on quality products, not settling for “good enough”. I love working with great designers that can focus on their art, and they enjoy working with me for my level of care and attention when bringing their designs to life. I’m proactive in implementing the look and feel that they’ve created across the site, resulting in less back-and-forth, less meetings, and a greater ROI for the business. I’m independently driven to get my work done and favor having a team to collaborate for advice with a new feature or tackling different obstacles on the same project.</p>
           </div>
           <div class="col-12 text-center">
-            <a href="/Tim-McKay-Resume.pdf" target="_new" @click="trackEvent('résumé')" class="btn btn-lg btn-primary">
+            <a href="/Tim-McKay-Resume.pdf" target="_new" @click="trackEvent('résumé')" class="btn btn-primary my-3">
               <i class="far fa-file-pdf"></i>&nbsp; View Résumé
             </a>
           </div>
@@ -264,7 +273,7 @@
         <div class="col-md modal-pf-gallery">
           <img v-if="active.images" v-for="image in active.images" :src="image" class="mw-100" />
         </div>
-        <div class="col-md modal-pf-desc" contenteditable>
+        <div class="col-md modal-pf-desc">
           <div v-html="active.desc"></div>
           <div v-if="active.meta.tags && active.meta.tags.length" class="mt-4">
             <h6>Highlights</h6>

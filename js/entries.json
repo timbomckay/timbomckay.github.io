@@ -127,7 +127,7 @@
       "date": "February 2015"
     }
   },
-  "louisvilleky": {
+  "louisvillemetro": {
     "title": "Louisville Metro",
     "url": "https://louisvilleky.gov",
     "images": [
@@ -164,8 +164,8 @@
       "date": "April 2014"
     }
   },
-  "louisvillewater": {
-    "title": "Louisville Water",
+  "lwc": {
+    "title": "Louisville Water Company",
     "url": "http://www.louisvillewater.com/",
     "images": [
       "img/portfolio/lwc--home.jpg"
@@ -195,10 +195,10 @@
       "img/portfolio/randomizr--list.jpg",
       "img/portfolio/randomizr--selection.jpg"
     ],
-    "desc": "<p>asdf</p>",
+    "desc": "<p>A few years ago my brother was contemplating a way to keep the kids attention when opening Christmas gifts, because when we go in order from youngest to oldest the 4-10 year olds are done and restless before the other half of the family. This discussion was held on Christmas Eve at maybe 9pm and my curiosity got the better of me. Determined to have a proof of concept to use the night of Christmas Day, I stayed up until 5am to create Randomizr version 1.0 hosted on JSFiddle.</p><p>I've slowly improved this application over the years due to not thinking about it until about a week before Christmas returns. Initially created as static html with data attributes & jQuery, I've since converted to a VueJS application utilizing localStorage.</p><p>There are a couple styling issues that need to be addressed before comfortably promoting to friends, but the functionality is there and keeps the little ones focused on this new game of \"who opens next?\".</p>",
     "meta": {
-      "tags": ["Personal Project"],
-      "date": "December 2017"
+      "tags": ["VueJS","LocalStorage","Personal Project"],
+      "date": "December 2017 (Latest)"
     }
   },
   "sojournint": {
@@ -209,9 +209,9 @@
       "img/portfolio/sojourn-International--trips.jpg",
       "img/portfolio/sojourn-International--article.jpg"
     ],
-    "desc": "<p><b><i>**Site is no longer active**</i></b></p>",
+    "desc": "<p>I volunteered my services to help a ministry of my church, helping to create a hub of information with a custom content architecture specific to their needs. This enables them to focus on more important tasks than maintaining a website.</p><p>Global trips are one of the more visited listings in the site and wanted to simplify this process for them as much as possible. Used Advanced Custom Fields (ACF) to provide additional data, only displaying the trip if the date hasn't passed and only allowing applications if the trip isn't full. Automating information as much as possible so the admins don't need to keep up with what's out of date or over capacity.</p><p><b><i>**Site is no longer active**</i></b> The site should be coming back up soon but they experienced some complications with a server migration.</p>",
     "meta": {
-      "tags": ["Concept"],
+      "tags": ["Front-End Development","Web Design","WordPress","ACF Architecture"],
       "date": "May 2014"
     }
   },
