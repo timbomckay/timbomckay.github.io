@@ -205,9 +205,9 @@
     "title": "Sojourn International",
     "url": false,
     "images": [
-      "img/portfolio/sojourn-International--home.jpg",
-      "img/portfolio/sojourn-International--trips.jpg",
-      "img/portfolio/sojourn-International--article.jpg"
+      "img/portfolio/sojourn-international--home.jpg",
+      "img/portfolio/sojourn-international--trips.jpg",
+      "img/portfolio/sojourn-international--article.jpg"
     ],
     "desc": "<p>I volunteered my services to help a ministry of my church, helping to create a hub of information with a custom content architecture specific to their needs. This enables them to focus on more important tasks than maintaining a website.</p><p>Global trips are one of the more visited listings in the site and wanted to simplify this process for them as much as possible. Used Advanced Custom Fields (ACF) to provide additional data, only displaying the trip if the date hasn't passed and only allowing applications if the trip isn't full. Automating information as much as possible so the admins don't need to keep up with what's out of date or over capacity.</p><p><b><i>**Site is no longer active**</i></b> The site should be coming back up soon but they experienced some complications with a server migration.</p>",
     "meta": {
