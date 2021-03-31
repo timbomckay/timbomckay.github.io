@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Responsive Images Test</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <style>img { max-width: 100%; height: auto; }</style>
+  </head>
+  <body>
+    <ul>
+      <li>Pixel Ratio: <span id="pr"></span></li>
+      <li>Width: <span id="w"></span></li>
+    </ul>
+
+    <img
+      alt="This is the hero image"
+      src="https://via.placeholder.com/860x360"
+      srcset="https://via.placeholder.com/560x360 560w,
+              https://via.placeholder.com/860x360 860w,
+              https://via.placeholder.com/1280x360 1280w"
+      sizes="(max-width: 600px) 100vw, 50vw"
+    >
+
+    <picture>
+      <source media="(min-width: 1500px)"
+              srcset="https://via.placeholder.com/1920?text=1920+1x 1x,
+                      https://via.placeholder.com/2400?text=2400+2x 2x,
+                      https://via.placeholder.com/2400?text=2400+3x 3x">
+      <source media="(min-width: 1024px)"
+              srcset="https://via.placeholder.com/1440?text=1440+1x 1x,
+                      https://via.placeholder.com/1920?text=1920+2x 2x,
+                      https://via.placeholder.com/2400?text=2400+3x 3x">
+      <source media="(min-width: 640px)"
+              srcset="https://via.placeholder.com/960?text=960+1x 1x,
+                      https://via.placeholder.com/1440?text=1440+2x 2x,
+                      https://via.placeholder.com/1440?text=1440+3x 3x">
+      <source srcset="https://via.placeholder.com/480?text=480+1x 1x,
+                      https://via.placeholder.com/960?text=960+2x 2x,
+                      https://via.placeholder.com/960?text=960+3x 3x">
+      <img src="https://via.placeholder.com/960?text=original+w2"
+           width="960"
+           height="960"
+           alt="Descriptive Text">
+    </picture>
+
+    <picture>
+      <source srcset="https://via.placeholder.com/1416x360 1x, https://via.placeholder.com/2832x360 2x" media="(min-width: 1200px)">
+      <source srcset="https://via.placeholder.com/870x360 1x, https://via.placeholder.com/1740x360 2x" media="(min-width: 1025px)">
+      <source srcset="https://via.placeholder.com/750x360 1x, https://via.placeholder.com/1500x360 2x" media="(max-width: 1024px)">
+      <img src="https://via.placeholder.com/1600x360" alt="ALT" >
+    </picture>
+
+    <script>
+      document.getElementById('pr').innerText = window.devicePixelRatio;
+      document.getElementById('w').innerText = window.screen.width;
+    </script>
+  </body>
+</html>
