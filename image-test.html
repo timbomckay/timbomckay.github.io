@@ -6,7 +6,19 @@
     <title>Responsive Images Test</title>
     <meta http-equiv="x-ua-compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
-    <style>img { width: 100%; height: auto; }</style>
+    <style>
+      body:before {
+        border: 5px solid red;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+      }
+      img { width: 100%; height: auto; display: block; margin: 1em 0; background-color: whitesmoke; }
+    </style>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖼️</text></svg>">
   </head>
   <body>
