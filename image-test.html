@@ -98,25 +98,6 @@
     <script>
       document.getElementById('pr').innerText = window.devicePixelRatio;
       document.getElementById('w').innerText = window.innerWidth;
-      
-      function reportWindowSize() {
-        // heightOutput.textContent = window.innerHeight;
-        // widthOutput.textContent = window.innerWidth;
-
-        // create a new div element
-        const log = document.createElement("li");
-
-        // and give it some content
-        const content = document.createTextNode(`Resized width: ${window.innerWidth}`);
-
-        // add the text node to the newly created div
-        log.appendChild(content);
-
-        // add the newly created element and its content into the DOM
-        document.getElementById("info").appendChild(log);
-      }
-
-      window.onresize = reportWindowSize;
     </script>
   </body>
 </html>
