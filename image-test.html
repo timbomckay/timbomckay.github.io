@@ -25,6 +25,7 @@
     <ul id="info">
       <li>Pixel Ratio: <span id="pr"></span></li>
       <li>Width: <span id="w"></span></li>
+      <li>Total: <span id="total"></span></li>
     </ul>
 
     <img
@@ -98,6 +99,7 @@
     <script>
       document.getElementById('pr').innerText = window.devicePixelRatio;
       document.getElementById('w').innerText = window.innerWidth;
+      document.getElementById('total').innerText = window.devicePixelRatio * window.innerWidth;
     </script>
   </body>
 </html>
