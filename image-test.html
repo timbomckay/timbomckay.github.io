@@ -22,7 +22,7 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖼️</text></svg>">
   </head>
   <body>
-    <ul>
+    <ul id="info">
       <li>Pixel Ratio: <span id="pr"></span></li>
       <li>Width: <span id="w"></span></li>
     </ul>
@@ -31,11 +31,28 @@
       alt="This is the hero image"
       width="960" height="960"
       onload="console.log('loaded', window.innerWidth)"
-      src="https://via.placeholder.com/860x360"
+      src="https://via.placeholder.com/360?text=original"
       sizes="100vw"
-      srcset="https://via.placeholder.com/560x360?text=560w 560w,
-              https://via.placeholder.com/860x360?text=860w 860w,
-              https://via.placeholder.com/1280x360?text=1280w 1280w"
+      srcset="https://via.placeholder.com/500?text=500w 500w,
+              https://via.placeholder.com/600?text=600w 600w,
+              https://via.placeholder.com/700?text=700w 700w,
+              https://via.placeholder.com/800?text=800w 800w,
+              https://via.placeholder.com/900?text=900w 900w,
+              https://via.placeholder.com/1000?text=1000w 1000w,
+              https://via.placeholder.com/1100?text=1100w 1100w,
+              https://via.placeholder.com/1200?text=1200w 1200w,
+              https://via.placeholder.com/1300?text=1300w 1300w,
+              https://via.placeholder.com/1400?text=1400w 1400w,
+              https://via.placeholder.com/1500?text=1500w 1500w,
+              https://via.placeholder.com/1600?text=1600w 1600w,
+              https://via.placeholder.com/1700?text=1700w 1700w,
+              https://via.placeholder.com/1800?text=1800w 1800w,
+              https://via.placeholder.com/1900?text=1900w 1900w,
+              https://via.placeholder.com/2000?text=2000w 2000w,
+              https://via.placeholder.com/2100?text=2100w 2100w,
+              https://via.placeholder.com/2200?text=2200w 2200w,
+              https://via.placeholder.com/2300?text=2300w 2300w,
+              https://via.placeholder.com/2400?text=2400w 2400w"
     >
 
     <picture>
@@ -81,6 +98,25 @@
     <script>
       document.getElementById('pr').innerText = window.devicePixelRatio;
       document.getElementById('w').innerText = window.innerWidth;
+      
+      function reportWindowSize() {
+        // heightOutput.textContent = window.innerHeight;
+        // widthOutput.textContent = window.innerWidth;
+
+        // create a new div element
+        const log = document.createElement("li");
+
+        // and give it some content
+        const content = document.createTextNode(`Resized width: ${window.innerWidth}`);
+
+        // add the text node to the newly created div
+        log.appendChild(content);
+
+        // add the newly created element and its content into the DOM
+        document.getElementById("info").appendChild(log);
+      }
+
+      window.onresize = reportWindowSize;
     </script>
   </body>
 </html>
