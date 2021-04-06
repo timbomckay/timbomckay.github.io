@@ -19,11 +19,6 @@
         z-index: -1;
       }
       img { width: 100%; height: auto; display: block; margin: 1em 0; background-color: blue; }
-      .nu-d-none { display: none; }
-      @media (min-width: 768px) {
-        .md\:nu-d-block { display: block; }
-        .md\:nu-d-none { display: none; }
-      }
     </style>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖼️</text></svg>">
   </head>
@@ -90,31 +85,6 @@
       <source srcset="https://via.placeholder.com/750x360 1x, https://via.placeholder.com/1500x360 2x" media="(max-width: 1024px)">
       <img src="https://via.placeholder.com/1600x360" alt="ALT" width="960" height="960">
     </picture>
-    
-    <img
-      class="md:nu-d-none"
-      alt="This is the hero image"
-      width="600" height="600"
-      src="https://via.placeholder.com/360?text=original"
-      loading="lazy"
-      sizes="100vw"
-      srcset="https://via.placeholder.com/300?text=1x1+300w 300w, 
-              https://via.placeholder.com/600?text=1x1+600w 600w, 
-              https://via.placeholder.com/950?text=1x1+960w 960w,
-              https://via.placeholder.com/1200?text=1x1+1240w 1240w"
-      >
-
-    <img
-      class="nu-d-none md:nu-d-block"
-      alt="This is the hero image"
-      width="960" height="540"
-      src="https://via.placeholder.com/360?text=original"
-      loading="lazy"
-      sizes="100vw"
-      srcset="https://via.placeholder.com/950x540?text=16x9+960w 960w,
-              https://via.placeholder.com/1280x720?text=16x9+1240w 1280w,
-              https://via.placeholder.com/1600x900?text=16x9+1600w 16000w"
-    >
     
     <img src="https://via.placeholder.com/480x360?text=lazy+load+1" width="480" height="360" loading="lazy" alt="lazy loading image">
     <img src="https://via.placeholder.com/480x360?text=lazy+load+2" width="480" height="360" loading="lazy" alt="lazy loading image">
