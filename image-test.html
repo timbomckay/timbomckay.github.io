@@ -106,6 +106,19 @@
       getDimensions();
       
       window.onresize = getDimensions;
+      
+      function widths(inc = 480, max = 2400, pad = 1.05) {
+        let size = inc;
+
+        while (size < max) {
+          console.log(size, size * pad);
+          size = size + inc;
+        }
+
+        console.log(size, size * pad);
+      }
+      
+      widths();
     </script>
   </body>
 </html>
