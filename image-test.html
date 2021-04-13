@@ -97,9 +97,15 @@
     <img src="https://via.placeholder.com/480x360?text=lazy+load+10" width="480" height="360" loading="lazy" alt="lazy loading image">
 
     <script>
-      document.getElementById('pr').innerText = window.devicePixelRatio;
-      document.getElementById('w').innerText = window.innerWidth;
-      document.getElementById('total').innerText = window.devicePixelRatio * window.innerWidth;
+      function getDimensions() { 
+        document.getElementById('pr').innerText = window.devicePixelRatio;
+        document.getElementById('w').innerText = window.innerWidth;
+        document.getElementById('total').innerText = window.devicePixelRatio * window.innerWidth;
+      }
+      
+      getDimensions();
+      
+      window.onresize = getDimensions;
     </script>
   </body>
 </html>
