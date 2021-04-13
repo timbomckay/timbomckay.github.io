@@ -8,10 +8,13 @@
     <meta name="HandheldFriendly" content="True">
     <style>
       body:before {
+        background-color: red;
         box-sizing: border-box;
-        border: 5px solid red;
-        content: "";
+        color: white;
+        content: "--- THRESHOLD ---";
         display: block;
+        font-family: monospace;
+        padding: 2px;
         position: absolute;
         top: calc(100vh + 1250px);
         left: 0;
@@ -107,15 +110,15 @@
       
       window.onresize = getDimensions;
       
-      function widths(inc = 480, max = 2400, pad = 1.05) {
+      function widths(inc = 480, max = 2400, pad = inc * 0.05) {
         let size = inc;
 
         while (size < max) {
-          console.log(size, size * pad);
+          console.log(size, size + pad);
           size = size + inc;
         }
 
-        console.log(size, size * pad);
+        console.log(size, size + pad);
       }
       
       widths();
