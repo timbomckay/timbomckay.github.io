@@ -22,6 +22,12 @@
         width: 100%;
       }
       img { width: 100%; height: auto; display: block; margin: 1em 0; background-color: blue; }
+      @media (min-width: 769px) {
+        .hero {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+      }
     </style>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖼️</text></svg>">
   </head>
@@ -31,11 +37,24 @@
       <li>Width: <span id="w"></span></li>
       <li>Total: <span id="total"></span></li>
     </ul>
+    
+    <div class="hero">
+      <picture style="order: 1;">
+        <source media="(max-width: 768px)" sizes="100vw" srcset="https://via.placeholder.com/480?text=w1+480x 480w,
+                  https://via.placeholder.com/960?text=w2+960x 960w">
+        <source media="(min-width: 769px)" sizes="(max-width: 1500px) 50vw, 840px" srcset="https://via.placeholder.com/480x360?text=w1+480x360 480w,
+                  https://via.placeholder.com/960x720?text=w2+960x720 960w,
+                  https://via.placeholder.com/1440x1080?text=w3+1440x1080 1440w,
+                  https://via.placeholder.com/1920x1440?text=w4+1920x1440 1920w,
+                  https://via.placeholder.com/2400x1800?text=w5+2400x1800 2400w">
+        <img src="https://via.placeholder.com/480x360?text=Original" alt="Art Direction" width="480" height="480" style="margin: 0;">
+      </picture>
+      <div>Hero Content</div>
+    </div>
 
     <img
       alt="This is the hero image"
       width="960" height="250"
-      onload="console.log('loaded', window.innerWidth)"
       src="https://via.placeholder.com/360?text=original"
       sizes="100vw"
       srcset="https://via.placeholder.com/250x250?text=250w 250w, 
@@ -111,15 +130,15 @@
       
       window.onresize = getDimensions;
       
-      function widths(inc = 480, max = 2400, pad = inc * 0.05) {
+      function widths(inc = 480, max = 2400) {
         let size = inc;
 
         while (size < max) {
-          console.log(size, size + pad);
+          console.log(size);
           size = size + inc;
         }
 
-        console.log(size, size + pad);
+        console.log(size);
       }
       
       widths();
