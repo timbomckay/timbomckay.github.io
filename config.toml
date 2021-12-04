@@ -1,0 +1,16 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Portfolio Site for Tim McKay"
+relativeurls = false
+disableKinds = ["RSS", "sitemap"]
+
+[build]
+writeStats = true
+
+[minify]
+minifyOutput = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

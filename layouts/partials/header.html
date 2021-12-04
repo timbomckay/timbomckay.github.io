@@ -1,0 +1,36 @@
+<a
+  href="#skip-nav"
+  class="fixed bg-primary-500 focus:text-white leading-none m-2 not-focus:sr-only px-3 py-2 text-xs z-50"
+  >Skip Navigation</a
+>
+<header class="p-4">
+  <div class="flex items-center justify-between max-w-ch mx-auto">
+    <a href="/" class="block font-medium text-lg">
+      tim<span class="text-gray-600">mckay</span>
+    </a>
+    <nav class="flex gap-2 items-center">
+      <a
+        class="icon text-gray-500"
+        target="_new"
+        href="https://www.linkedin.com/in/timbomckay/"
+      >
+        {{- partial (print "logos/linkedin.svg") -}}
+      </a>
+      <a
+        class="icon text-gray-500"
+        target="_new"
+        href="https://github.com/timbomckay"
+      >
+        {{- partial (print "logos/github.svg") -}}
+      </a>
+      <a
+        class="icon text-gray-500"
+        target="_new"
+        href="mailto:timbomckay@gmail.com"
+      >
+        {{- partial "icons/content/mail.svg" -}}
+      </a>
+    </nav>
+  </div>
+</header>
+<div id="skip-nav" tabindex="-1" class="sr-only"></div>

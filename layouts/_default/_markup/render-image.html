@@ -1,0 +1,11 @@
+<span class="block -mx-6 lg:-mx-28">
+  <img
+    src="https://thegiddylimit.github.io/img/{{ .Destination | safeURL }}"
+    alt="{{ .Text }}"
+    class="mx-auto relative z-10"
+    loading="lazy"
+    {{ with .Title}}
+      title="{{ . }}"
+    {{ end }}
+  />
+</span>

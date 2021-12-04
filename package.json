@@ -1,0 +1,29 @@
+{
+  "name": "timbomckay",
+  "version": "1.0.0",
+  "description": "My portfolio site",
+  "repository": "https://github.com/timbomckay/timbomckay.github.io",
+  "scripts": {
+    "build": "hugo --cleanDestinationDir",
+    "serve": "hugo server"
+  },
+  "dependencies": {
+    "lit": "^2.0.2"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint": "^8.3.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "lit": "^2.0.2",
+    "postcss": "^8.3.11",
+    "postcss-cli": "^9.0.2",
+    "postcss-import": "^14.0.2",
+    "prettier": "2.5.0",
+    "prettier-plugin-go-template": "^0.0.11",
+    "prettier-plugin-toml": "0.3.1",
+    "tailwindcss": "^2.2.19"
+  }
+}

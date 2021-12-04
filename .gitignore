@@ -1,1 +1,12 @@
+# files
 .DS_Store
+.env
+.netlify
+deploy
+hugo_stats.json
+
+# directories
+img/
+node_modules/
+public/
+resources/

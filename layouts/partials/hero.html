@@ -1,0 +1,93 @@
+{{/* {{ partial "debug" .Params }} */}}
+{{ $isFullcreen := eq .Params.hero.type "fullscreen" }}
+
+{{ $classList := slice "mb-12" }}
+
+{{ $type := .Params.hero.type }}
+{{ if (eq $type "fullscreen") }}
+  {{ $classList = $classList | append "hero--fullscreen" "grid" "min-h-screen" "place-content-center" "print:min-h-0" "px-10" "py-24" "relative" "text-center" "text-white" "z-10" }}
+{{ else if (eq $type "split") }}
+  {{ $classList = $classList | append "hero--split grid-cols-2 items-center md:grid" }}
+{{ else if (eq $type "billboard") }}
+  {{ $classList = $classList | append "hero--billboard" "max-w-screen-md" "mx-auto" "py-0" "relative" "text-center" "text-white" "z-10" }}
+{{ else }}
+  {{/* Default */}}
+{{ end }}
+
+
+<div class="hero {{ delimit (sort $classList) " " }}">
+  {{ $classList := slice "" }}
+  {{ if (eq $type "fullscreen") }}
+    {{ $classList = $classList | append "max-w-screen-md" "py-4" "relative" "z-10" }}
+  {{ else if (eq $type "billboard") }}
+    {{ $classList = $classList | append "max-w-screen-md" "py-4" "relative" "z-10" }}
+  {{ else if (eq $type "split") }}
+    {{ $classList = $classList | append "py-8" }}
+  {{ else }}
+    {{/* Default */}}
+    {{ $classList = $classList | append "max-w-ch" }}
+  {{ end }}
+
+
+  <div class="mx-auto {{ delimit $classList " " }}">
+    {{ $classList := slice "" }}
+    {{ if (eq $type "fullscreen") }}
+      {{ $classList = $classList | append "mt-4" "text-white" "sm:text-7xl" }}
+    {{ else if (eq $type "billboard") }}
+      {{ $classList = $classList | append "mt-4" "text-white" }}
+    {{ else if (eq $type "split") }}
+      {{ $classList = $classList | append "md:mt-0" }}
+    {{ end }}
+
+
+    <h1 class="mb-6 {{ delimit $classList " " }}">{{- .Params.title -}}</h1>
+
+    {{- with .Params.hero.description -}}
+      {{ $classList := slice "" }}
+      {{ if (eq $type "fullscreen") }}
+        {{ $classList = $classList | append "mx-auto" }}
+      {{ else if (eq $type "billboard") }}
+        {{ $classList = $classList | append "mx-auto" }}
+      {{ end }}
+      <p class="max-w-screen-sm {{ delimit $classList " " }}">{{- . -}}</p>
+    {{- end -}}
+
+    {{ with .Params.hero.cta }}
+      {{ with (site.GetPage .) }}
+        <a
+          href="{{ .RelPermalink }}"
+          class="btn btn-primary mt-2 sm:mt-0 text-base"
+        >
+          {{- .LinkTitle -}}
+        </a>
+      {{ end }}
+    {{ end }}
+  </div>
+
+  {{- with .Params.hero.image -}}
+    {{ $classList := slice "" }}
+    {{ if (eq $type "fullscreen") }}
+      {{ $classList = $classList | append "absolute" "bottom-0" "left-0" "right-0" "top-0" }}
+    {{ else if (eq $type "billboard") }}
+      {{ $classList = $classList | append "absolute" "bottom-0" "filter" "drop-shadow-md" "left-0" "mx-3" "md:mx-2" "lg:mx-0" "right-0" "top-0" }}
+    {{ else }}
+      {{ $classList = $classList | append "max-w-screen-lg" "mx-auto" }}
+    {{ end }}
+
+
+    <div class="{{ delimit $classList " " }}">
+      {{ $classList := slice "w-full" "bg-gray-100" }}
+      {{ if (eq $type "fullscreen") }}
+        {{ $classList = $classList | append "absolute" "h-full" "w-full" "object-cover" }}
+      {{ else if (eq $type "billboard") }}
+        {{ $classList = $classList | append "absolute" "h-full" "w-full" "object-cover" "overflow-auto" "rounded-lg" }}
+      {{ else if (eq $type "split") }}
+        {{ $classList = $classList | append "md:mt-0" }}
+      {{ else }}
+        {{ $classList = $classList | append "mt-12" }}
+      {{ end }}
+
+      {{- partial "image" (dict "src" . "alt" $.Page.Params.Title "class" (delimit $classList " ")) -}}
+    </div>
+  {{- end -}}
+</div>
