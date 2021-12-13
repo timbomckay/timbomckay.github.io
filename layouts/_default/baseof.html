@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html
-  lang="{{ .Site.LanguageCode }}"
-  style="background-image:url('{{ "/lightpaperfibers.png" | relURL }}')"
->
+<html lang="{{ .Site.LanguageCode }}">
   {{- partial "head" . -}}
   <body class="flex flex-col min-h-screen">
     {{- partial "header" . -}}
-    {{- block "main" . }}{{- end }}
-    {{- partial "footer" . -}}
+    <main class="lg:pb-10 mx-auto px-6 lg:px-6 mb-6 lg:mb-8 w-full">
+      {{- block "main" . }}{{- end }}
+    </main>
   </body>
 </html>

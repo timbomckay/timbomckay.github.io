@@ -5,4 +5,28 @@
       {{- .Content -}}
     </div>
   </article>
+  <div class="max-w-ch mx-auto text-center mt-12">
+    {{ with .PrevInSection }}
+      <a
+        class="mx-2 border-2 pl-2 pr-3 py-2 rounded text-gray-500 text-xs hover:border-primary-300"
+        href="{{ .Permalink }}"
+      >
+        <span class="icon text-base">
+          {{- partial "icons/navigation/chevron_left.svg" -}}
+        </span>
+        {{ .Title }}
+      </a>
+    {{ end }}
+    {{ with .NextInSection }}
+      <a
+        class="mx-2 border-2 pl-3 pr-2 py-2 rounded text-gray-500 text-xs hover:border-primary-300"
+        href="{{ .Permalink }}"
+      >
+        {{ .Title }}
+        <span class="icon text-base">
+          {{- partial "icons/navigation/chevron_right.svg" -}}
+        </span>
+      </a>
+    {{ end }}
+  </div>
 {{ end }}

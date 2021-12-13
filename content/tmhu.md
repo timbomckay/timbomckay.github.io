@@ -1,8 +1,9 @@
 ---
-title: TOYOTA FORKLIFTS
-date: April 2018
+title: Toyota Forklifts
+date: 2018-04-01
+draft: true
 hero:
-  image: /media/portfolio/tmhu--home.jpg
+  image: /media/tmhu--home.jpg
 ---
 
 After launching the e-commerce site for Toyota Material Handling U.S.A. (TMHU), we worked on improving the quality of their marketing website. Blackstone Media had previously handled their redesign a couple years prior but a number of features had been added since and needed some restructuring. This would provide better maintenance, SEO management and content creation while also taking advantage of WordPress' newer REST API.

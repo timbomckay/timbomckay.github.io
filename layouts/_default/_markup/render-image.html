@@ -1,11 +1,4 @@
-<span class="block -mx-6 lg:-mx-28">
-  <img
-    src="https://thegiddylimit.github.io/img/{{ .Destination | safeURL }}"
-    alt="{{ .Text }}"
-    class="mx-auto relative z-10"
-    loading="lazy"
-    {{ with .Title}}
-      title="{{ . }}"
-    {{ end }}
-  />
-</span>
+{{/* <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" with .Title }}title="{{ . }}"{{ end }} /> */}}
+<div class="-mx-6 md:-mx-10 my-12">
+  {{- partial "image" (dict "src" (.Destination | safeURL) "alt" .Text "loading" "lazy" "levels" 5) -}}
+</div>

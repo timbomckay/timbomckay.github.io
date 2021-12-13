@@ -9,8 +9,3 @@ writeStats = true
 
 [minify]
 minifyOutput = true
-
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true

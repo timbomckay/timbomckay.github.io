@@ -1,57 +1,43 @@
 {{ define "main" }}
-  <main class="lg:pb-10 mx-auto px-4 lg:px-6 mb-6 lg:mb-8 w-full">
-    <div class="max-w-ch mx-auto mt-8 mb-12">
-      <h1>{{- .Title -}}</h1>
-      {{ with .Content }}
-        {{- . -}}
-      {{ end }}
-    </div>
-
-    {{ range .Pages }}
-      <div class="my-24">
-        <div class="mx-auto max-w-ch px-6">
-          <h2 class="sm:mt-0">
-            <a href="{{ .Permalink }}" class="font-extrabold">
-              {{- .Title -}}
-            </a>
-          </h2>
-          <p>{{ .Summary }}</p>
-        </div>
-
-        {{ if .Sections }}
-          <div
-            class="max-w-screen-lg mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6"
-          >
-            {{ range first 4 .Sections }}
-              <article>
-                {{ $link := .Permalink }}
-                {{- with .Params.thumbnail -}}
-                  <a
-                    href="{{ $link }}"
-                    class="block"
-                    style="aspect-ratio: 3/4;"
-                  >
-                    <img
-                      class="object-cover w-full h-full"
-                      src="https://thegiddylimit.github.io/{{ . | safeURL }}"
-                      alt="cover"
-                      loading="lazy"
-                    />
-                  </a>
-                {{- end -}}
-                <span class="sr-only">
-                  <a href="{{ .Permalink }}" class="font-extrabold"
-                    >{{ .Title }}</a
-                  >
-                  <a href="{{ .Permalink }}" class="text-sm font-sans"
-                    >View Adventure ></a
-                  >
-                </span>
-              </article>
-            {{ end }}
-          </div>
-        {{ end }}
-      </div>
+  <div class="max-w-ch mx-auto mt-8 mb-12">
+    <h1>{{- .Title -}}</h1>
+    {{ with .Content }}
+      {{- . -}}
     {{ end }}
-  </main>
+  </div>
+
+  {{ range .Pages }}
+    {{- if .Params.hero.image -}}
+      <article class="mx-auto max-w-screen-lg sm:flex my-8">
+        <div class="-mx-6 sm:ml-0 sm:mr-4" style="flex:3">
+          {{- partial "image" (dict "src" .Params.hero.image "alt" .Title "loading" "lazy" "method" "Fill") -}}
+        </div>
+        <div class="flex-1" style="flex:2">
+          <div class="max-w-lg mr-auto my-6 md:px-6">
+            <p class="text-xs mb-2">{{ .PublishDate.Format "January 2006" }}</p>
+            <h2 class="my-4 sm:mt-0">
+              <a href="{{ .Permalink }}" class="font-extrabold">{{ .Title }}</a>
+            </h2>
+            <p class="text-sm">{{ .Summary }}</p>
+            <a href="{{ .Permalink }}" class="mt-4 text-xs">
+              View Project
+              <span class="icon text-sm">
+                {{- partial "icons/navigation/chevron_right.svg" -}}
+              </span>
+            </a>
+          </div>
+        </div>
+      </article>
+    {{- else -}}
+      <article class="mx-auto max-w-ch my-24 px-6">
+        <h2 class="sm:mt-0">
+          <a href="{{ .Permalink }}" class="font-extrabold">{{ .Title }}</a>
+        </h2>
+        <p class="text-sm">{{ .Summary }}</p>
+        <a href="{{ .Permalink }}" class="btn btn-primary mt-4 text-sm">
+          View Page
+        </a>
+      </article>
+    {{- end -}}
+  {{ end }}
 {{ end }}

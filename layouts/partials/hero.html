@@ -15,7 +15,7 @@
 {{ end }}
 
 
-<div class="hero {{ delimit (sort $classList) " " }}">
+<div class="hero mt-12 {{ delimit (sort $classList) " " }}">
   {{ $classList := slice "" }}
   {{ if (eq $type "fullscreen") }}
     {{ $classList = $classList | append "max-w-screen-md" "py-4" "relative" "z-10" }}
@@ -40,9 +40,15 @@
     {{ end }}
 
 
-    <h1 class="mb-6 {{ delimit $classList " " }}">{{- .Params.title -}}</h1>
+    <p class="text-sm text-primary-500">
+      {{ .PublishDate.Format "January 2006" }}
+    </p>
 
-    {{- with .Params.hero.description -}}
+    <h1 class="my-6 {{ delimit $classList " " }}">
+      {{- .Params.title -}}
+    </h1>
+
+    {{- with .Params.summary -}}
       {{ $classList := slice "" }}
       {{ if (eq $type "fullscreen") }}
         {{ $classList = $classList | append "mx-auto" }}

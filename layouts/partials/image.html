@@ -4,10 +4,13 @@
   sizes: string,
   src: string,
   srcset: array, // an array for size breakpoints for [xs, sm, md, lg]
+  method: Resize / Fit / Fill / 
 }  */}}
 
 {{/* get file that matches the filename */}}
 {{ $image := (site.GetPage "section" "media").Resources.GetMatch (strings.TrimPrefix "/media/" .src ) }}
+
+{{ $method := .method }}
 
 {{/*  Define default src file  */}}
 {{ $src := $image.RelPermalink }}
@@ -30,8 +33,17 @@
   {{ $val := mul $base $sequence }}
 
   {{/* only use images smaller than or equal to the src (original) image size, as Hugo will upscale small images */}}
-  {{ if ge $image.Width $val }}
-    {{ $img := ($image.Resize (printf "%s%s q100" (string $val) "x")) }}
+  {{ if ge $image.Width $val }}    
+    {{ $img := $image }}
+
+    {{ if eq $method "Fill" }}
+      {{ $options := (printf "%s%s%s Top q100 webp" (string $val) "x" (string (math.Round (mul $val 0.5625)))) }}
+      {{ $img = ($image.Fill $options) }}
+    {{ else }}
+      {{ $options := (printf "%s%s%s Top q100 webp" (string $val) "x" "0") }}
+      {{ $img = ($image.Resize $options) }}
+    {{ end }}
+
     {{ $srcset = $srcset | append (printf "%s %s%s" $img.RelPermalink (string $val) "w") }}
 
     {{/*  if second tier, assign to $src as fallback image  */}}

@@ -1,8 +1,9 @@
 ---
-title: TOYOTA FORKLIFTS SHOP
-date: February 2018
+title: Toyota Forklifts Shop
+date: 2018-02-01
+draft: true
 hero:
-  image: /media/portfolio/tmhu-shop--home.jpg
+  image: /media/tmhu-shop--home.jpg
 ---
 
 I led a team in building this Fortune 10 company's entry into the world of online sales. Toyota Material Handling U.S.A. (TMHU) was the first division of Toyota Motors to sell directly to consumers while still appeasing their franchise dealers. Our team at Blackstone Media handled the user experience, partnering with another company who managed the SAP Hybris integration. Our design team created the interface while I led the development team in bringing it to life.

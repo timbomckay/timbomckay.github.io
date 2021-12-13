@@ -8,27 +8,34 @@
     <a href="/" class="block font-medium text-lg">
       tim<span class="text-gray-600">mckay</span>
     </a>
-    <nav class="flex gap-2 items-center">
+    <nav class="flex gap-3 items-center">
       <a
-        class="icon text-gray-500"
+        class="icon inline-flex text-gray-500"
         target="_new"
         href="https://www.linkedin.com/in/timbomckay/"
       >
         {{- partial (print "logos/linkedin.svg") -}}
       </a>
       <a
-        class="icon text-gray-500"
+        class="icon inline-flex text-gray-500"
         target="_new"
         href="https://github.com/timbomckay"
       >
         {{- partial (print "logos/github.svg") -}}
       </a>
       <a
-        class="icon text-gray-500"
+        class="icon inline-flex text-gray-500"
         target="_new"
         href="mailto:timbomckay@gmail.com"
       >
         {{- partial "icons/content/mail.svg" -}}
+      </a>
+      <a
+        class="border-2 px-2 py-1 rounded text-gray-500 text-xs hover:border-primary-300"
+        target="_new"
+        href="/Tim-McKay-Resume.pdf"
+      >
+        Résumé
       </a>
     </nav>
   </div>
