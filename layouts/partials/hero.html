@@ -58,15 +58,11 @@
       <p class="max-w-screen-sm {{ delimit $classList " " }}">{{- . -}}</p>
     {{- end -}}
 
-    {{ with .Params.hero.cta }}
-      {{ with (site.GetPage .) }}
-        <a
-          href="{{ .RelPermalink }}"
-          class="btn btn-primary mt-2 sm:mt-0 text-base"
-        >
-          {{- .LinkTitle -}}
-        </a>
-      {{ end }}
+    {{ with .Params.site }}
+      <a href="{{ . }}" class="mt-4 text-xs">
+        Visit Site
+        {{- partial "external-link-icon.html" -}}
+      </a>
     {{ end }}
   </div>
 

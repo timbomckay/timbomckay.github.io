@@ -1,6 +1,8 @@
 ---
 title: Randomizr
 date: 2020-12-25
+site: https://timbomckay.github.io/randomizr/
+slug: randomizr-project
 summary: An app to turn opening Christmas presents into a names from a hat game of suspense.
 hero:
   image: /media/randomizr--list.jpg
