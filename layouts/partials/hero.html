@@ -78,7 +78,7 @@
 
 
     <div class="{{ delimit $classList " " }}">
-      {{ $classList := slice "w-full" "bg-gray-100" }}
+      {{ $classList := slice "w-full" "bg-gray-100" "shadow-md" }}
       {{ if (eq $type "fullscreen") }}
         {{ $classList = $classList | append "absolute" "h-full" "w-full" "object-cover" }}
       {{ else if (eq $type "billboard") }}
