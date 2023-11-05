@@ -11,7 +11,7 @@
       {{- if .Params.hero.image -}}
         <article class="">
           <a href="{{ .Permalink }}">
-            {{- partial "image" (dict "src" .Params.hero.image "alt" .Title "loading" "lazy" "method" "Fill") -}}
+            {{- partial "image" (dict "src" .Params.hero.image "alt" .Title "loading" "lazy" "method" "Fill" "sizes" "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 640px" "levels" "5") -}}
           </a>
           <div class="flex-1" style="flex:2">
             <div class="max-w-lg mr-auto my-6 md:px-6">
