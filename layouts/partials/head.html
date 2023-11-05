@@ -20,9 +20,24 @@
 {{ end }}
 <style>{{ $css.Content | safeCSS }}</style>
 
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<!-- Preemptively warm up the fonts’ origin -->
 <link
+  rel="preconnect"
+  href="https://fonts.gstatic.com"
+  crossorigin
+/>
+
+<!-- Initiate a high-priority, asynchronous fetch for the CSS file. Works in most modern browsers. -->
+<link
+  rel="preload"
+  as="style"
   href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+/>
+
+<!-- Initiate a low-priority, asynchronous fetch that gets applied to the page only after it’s arrived. Works in all browsers with JavaScript enabled. -->
+<link
   rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+  media="print"
+  onload="this.media='all'"
 />
