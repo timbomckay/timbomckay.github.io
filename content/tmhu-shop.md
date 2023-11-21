@@ -15,6 +15,5 @@ The shop was launched with only two variations of one model but was structured f
 - Front-End Development
 - VueJS
 - E-Commerce
-- SAP Hybris
 - User Authorization
 - Chase Payment Gateway
