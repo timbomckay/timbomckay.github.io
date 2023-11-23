@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "Portfolio Site for Tim McKay"
+title = "Tim McKay"
 relativeurls = false
 disableKinds = ["RSS", "sitemap"]
 

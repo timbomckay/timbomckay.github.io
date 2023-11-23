@@ -2,17 +2,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 {{ $title := print .Title " · " .Site.Title }}
-{{ if .IsHome }}{{ $title =
-.Site.Title }}{{ end }}
+{{ if .IsHome }}{{ $title = "Tim McKay · A Design Centric, Quality Focused, Front-End Engineer" }}{{ end }}
 <title>{{ $title }}</title>
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="HandheldFriendly" content="True" />
-
-<link
-  rel="icon"
-  href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>"
-/>
 
 {{ $css := resources.Get "index.css" | resources.PostCSS }}
 {{ if hugo.IsProduction }}
@@ -43,22 +37,26 @@
 />
 
 <!-- Primary Meta Tags -->
-<title>Tim McKay — A Design Centric, Quality Focused Frontend Engineer</title>
-<meta name="title" content="Tim McKay — A Design Centric, Quality Focused Frontend Engineer" />
+<meta name="title" content="Tim McKay · A Design Centric, Quality Focused, Front-End Engineer" />
 <meta name="description" content="I am a simplifier. I love making things easier for anyone I can help. At the core of what makes me an exceptional software engineer is the desire to help others by creating an enjoyable experience." />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://timbomckay.github.io/" />
-<meta property="og:title" content="Tim McKay — A Design Centric, Quality Focused Frontend Engineer" />
+<meta property="og:title" content="Tim McKay · A Design Centric, Quality Focused, Front-End Engineer" />
 <meta property="og:description" content="I am a simplifier. I love making things easier for anyone I can help. At the core of what makes me an exceptional software engineer is the desire to help others by creating an enjoyable experience." />
 <meta property="og:image" content="/meta-image.jpg" />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content="https://timbomckay.github.io/" />
-<meta property="twitter:title" content="Tim McKay — A Design Centric, Quality Focused Frontend Engineer" />
+<meta property="twitter:title" content="Tim McKay · A Design Centric, Quality Focused, Front-End Engineer" />
 <meta property="twitter:description" content="I am a simplifier. I love making things easier for anyone I can help. At the core of what makes me an exceptional software engineer is the desire to help others by creating an enjoyable experience." />
 <meta property="twitter:image" content="/meta-image.jpg" />
 
 <!-- Meta Tags Generated with https://metatags.io -->
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
