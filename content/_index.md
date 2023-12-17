@@ -1,5 +1,5 @@
 ---
-title: A Design Centric, Quality Focused, Front-End Engineer
+title: A Front-End Engineer Crafting Enjoyable Experiences
 ---
 
 I am a simplifier. I love making things easier for anyone I can help. Whether it’s an intuitive architecture for maintainable scalability, automating tasks for coworkers, simplifying content management for clients, or creating fast & pleasant experiences for users. Outside of work I find ways to simplify my wife’s daily tasks, researching solutions for my friends out of curiosity, or setting up technical devices for family to minimize complexities. At the core of what makes me an exceptional software engineer is the desire to help others by creating an enjoyable experience.
