@@ -14,7 +14,9 @@
 {{ end }}
 <style>{{ $css.Content | safeCSS }}</style>
 
+{{ if hugo.IsProduction }}
 <script async src="https://us.umami.is/script.js" data-website-id="86def73f-69fc-4a51-a6a3-77c709db394e"></script>
+{{ end }}
 
 <!-- Preemptively warm up the fonts’ origin -->
 <link
@@ -38,25 +40,7 @@
   onload="this.media='all'"
 />
 
-<!-- Primary Meta Tags -->
-<meta name="title" content="Tim McKay · A Front-End Engineer Crafting Enjoyable Experiences" />
-<meta name="description" content="I am a simplifier. I love making things easier for anyone I can help. At the core of what makes me an exceptional software engineer is the desire to help others by creating an enjoyable experience." />
-
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://timbomckay.github.io/" />
-<meta property="og:title" content="Tim McKay · A Front-End Engineer Crafting Enjoyable Experiences" />
-<meta property="og:description" content="I am a simplifier. I love making things easier for anyone I can help. At the core of what makes me an exceptional software engineer is the desire to help others by creating an enjoyable experience." />
-<meta property="og:image" content="/meta-image.jpg" />
-
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content="https://timbomckay.github.io/" />
-<meta property="twitter:title" content="Tim McKay · A Front-End Engineer Crafting Enjoyable Experiences" />
-<meta property="twitter:description" content="I am a simplifier. I love making things easier for anyone I can help. At the core of what makes me an exceptional software engineer is the desire to help others by creating an enjoyable experience." />
-<meta property="twitter:image" content="/meta-image.jpg" />
-
-<!-- Meta Tags Generated with https://metatags.io -->
+{{- partial "meta-social" . -}}
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">

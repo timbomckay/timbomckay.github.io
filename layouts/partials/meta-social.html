@@ -1,5 +1,7 @@
 {{ $title := print .Title " · " .Site.Title }}
-{{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+{{ if .IsHome }}
+  {{ $title = "Tim McKay · A Front-End Engineer Crafting Enjoyable Experiences" }}
+{{ end }}
 
 <!-- Primary Meta Tags -->
 <meta name="publisher" content="{{ .Site.Title }}" />
@@ -26,21 +28,22 @@
 <meta name="twitter:title" content="{{ $title }}" />
 <meta name="twitter:url" content="{{ .Permalink }}" />
 
+{{ $src := "/meta-image.jpg" }}
+
 <!-- Images -->
 {{ with .Params.hero.image }}
-  <!-- TODO: Provide Fallback Image Setting -->
   {{ $image := (site.GetPage "section" "media").Resources.GetMatch (strings.TrimPrefix "/media/" . ) }}
-  {{ $src := $image.Permalink }}
+  {{ $src = $image.Permalink }}
   {{ if ge $image.Width 420 }}
     {{ $img := ($image.Resize (printf "%s%s" (string 420) "x")) }}
     {{ $src = $img.Permalink }}
   {{ end }}
-
-  <meta itemprop="image" content="{{ $src }}" />
-  <meta property="og:image" content="{{ $src }}" />
-  <meta property="og:image:url" content="{{ $src }}" />
-  <meta name="twitter:image" content="{{ $src }}" />
 {{ end }}
+
+<meta itemprop="image" content="{{ $src }}" />
+<meta property="og:image" content="{{ $src }}" />
+<meta property="og:image:url" content="{{ $src }}" />
+<meta name="twitter:image" content="{{ $src }}" />
 
 {{ if ne .Lastmod .PublishDate }}
 <meta itemprop="dateModified" content="{{ dateFormat "2006-01-02T15:04:05Z" .Lastmod.UTC | safeHTML }}" />
