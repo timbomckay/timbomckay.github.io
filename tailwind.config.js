@@ -5,7 +5,7 @@ const content = [
   './hugo_stats.json',
 ];
 
-if (process.env.HUGO_ENVIRONMENT === 'production') {
+if (process.env.HUGO_ENVIRONMENT !== 'production') {
   content.push('./layouts/**/*.{html,js,ts}');
 }
 

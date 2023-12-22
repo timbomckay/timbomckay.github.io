@@ -28,9 +28,8 @@
 <meta name="twitter:title" content="{{ $title }}" />
 <meta name="twitter:url" content="{{ .Permalink }}" />
 
-{{ $src := "/meta-image.jpg" }}
-
 <!-- Images -->
+{{ $src := "/meta-image.jpg" }}
 {{ with .Params.hero.image }}
   {{ $image := (site.GetPage "section" "media").Resources.GetMatch (strings.TrimPrefix "/media/" . ) }}
   {{ $src = $image.Permalink }}
@@ -49,10 +48,4 @@
 <meta itemprop="dateModified" content="{{ dateFormat "2006-01-02T15:04:05Z" .Lastmod.UTC | safeHTML }}" />
 <meta property="article:modified_time" content="{{ dateFormat "2006-01-02T15:04:05Z" .Lastmod.UTC | safeHTML }}" />
 <meta property="og:updated_time" content="{{ dateFormat "2006-01-02T15:04:05Z" .Lastmod.UTC | safeHTML }}" />
-{{ end }}
-
-{{ if false }}
-<!-- TODO: Provide Social Settings -->
-<meta name="twitter:site" content="@bolsnews" />
-<meta property="article:publisher" content="https://www.facebook.com/belloflostsouls/" />
 {{ end }}
