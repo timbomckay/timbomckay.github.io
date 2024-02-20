@@ -5,7 +5,26 @@ relativeurls = false
 disableKinds = ["RSS", "sitemap"]
 
 [build]
-writeStats = true
+  writeStats = true
 
 [minify]
-minifyOutput = true
+  minifyOutput = true
+
+[params]
+  mainSections = ['projects']
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    hl_inline = false
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    noHl = false
+    style = 'github-dark'
+    tabWidth = 4

@@ -1,0 +1,49 @@
+{{ define "main" }}
+  <div class="max-w-ch mx-auto mt-8 mb-12">
+    <h1>{{- .Title -}}</h1>
+    {{ with .Content }}
+      {{- . -}}
+    {{ end }}
+  </div>
+
+  <div class="mx-auto max-w-screen-lg my-8">
+    {{ range where .Site.RegularPages "Section" "in" .Site.MainSections }}    
+      {{- if .Params.hero.image -}}
+        <article class="lg:flex gap-8 my-14 odd:flex-row-reverse items-center">
+          <a class="flex-1 basis-[55%] block rounded-3xl overflow-hidden shadow-lg shadow-slate-200" href="{{ .Permalink }}">
+            {{- partial "image" (dict "src" .Params.hero.image "alt" .Title "loading" "lazy" "method" "Fill" "sizes" "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 640px" "levels" "5") -}}
+          </a>
+          <div class="flex-1 basis-[45%]">
+            <div class="max-w-lg mr-auto my-6 md:px-6">
+              <p class="text-xs mb-2">
+                {{ .PublishDate.Format "January 2006" }}
+              </p>
+              <h2 class="my-3 sm:mt-0 h3">
+                <a href="{{ .Permalink }}" class="font-extrabold"
+                  >{{ .Title }}
+                </a>
+              </h2>
+              <p class="text-sm">{{ .Summary }}</p>
+              <a href="{{ .Permalink }}" class="mt-4 text-xs">
+                View Project
+                <span class="icon text-sm">
+                  {{- partial "icons/navigation/chevron_right.svg" -}}
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+      {{- else -}}
+        <article class="mx-auto max-w-ch my-24 px-6">
+          <h2 class="sm:mt-0">
+            <a href="{{ .Permalink }}" class="font-extrabold">{{ .Title }}</a>
+          </h2>
+          <p class="text-sm">{{ .Summary }}</p>
+          <a href="{{ .Permalink }}" class="btn btn-primary mt-4 text-sm">
+            View Page
+          </a>
+        </article>
+      {{- end -}}
+    {{ end }}
+  </div>
+{{ end }}

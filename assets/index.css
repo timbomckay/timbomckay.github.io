@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
+
+.highlight > pre {
+  padding: 1rem;
+  border-radius: 0.4rem;
+  overflow: scroll;
+  font-size: 0.75rem;
+}
+
 @tailwind utilities;
