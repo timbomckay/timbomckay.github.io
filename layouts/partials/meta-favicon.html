@@ -1,3 +1,5 @@
+{{ "<!-- start: partials/meta-favicon.html -->" | safeHTML }}
+
 {{/*  get identity settings  */}}
 {{ with ((site.GetPage "section" "settings").Resources.GetMatch "identity.md") }}
   {{/*  get favicon parameter  */}}
@@ -18,3 +20,5 @@
     {{ end }}
   {{ end }}
 {{ end }}
+
+{{ "<!-- end: partials/meta-favicon.html -->" | safeHTML }}

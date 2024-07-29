@@ -1,0 +1,17 @@
+{{ $class:= .Get "class" }}
+{{ $color:= "yellow" }}
+{{ $type:= "neutral" }}
+
+{{ range $i, $e:= .Params }}
+  {{ if eq $i "type" }}{{ $type = $e }}{{ end }}
+{{ end }}
+
+{{ if eq $type "super" }}
+  {{ $color = "cyan" }}
+{{ else if eq $type "good" }}
+  {{ $color = "emerald" }}
+{{ else if eq $type "bad" }}
+  {{ $color = "red" }}
+{{ end }}
+
+<mark class="{{ $class }} bg-{{ $color }}-200 dark:bg-{{ $color }}-600 text-inherit">{{ .Inner | markdownify }}</mark>

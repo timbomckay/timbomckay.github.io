@@ -1,4 +1,6 @@
 {{ define "main" }}
+  {{ "<!-- start: _default/list.html -->" | safeHTML }}
+  
   <div class="max-w-ch mx-auto mt-8 mb-12">
     <h1>{{- .Title -}}</h1>
     {{ with .Content }}
@@ -34,16 +36,25 @@
           </div>
         </article>
       {{- else -}}
-        <article class="mx-auto max-w-ch my-24 px-6">
+        <article class="mx-auto max-w-ch my-24">
           <h2 class="sm:mt-0">
             <a href="{{ .Permalink }}" class="font-extrabold">{{ .Title }}</a>
           </h2>
           <p class="text-sm">{{ .Summary }}</p>
-          <a href="{{ .Permalink }}" class="btn btn-primary mt-4 text-sm">
+
+          <a
+            class="mt-4 text-xs inline-flex items-center group"
+            href="{{ .Permalink }}"
+          >
             View Page
+            <span class="icon text-base ml-2 bg-teal-400 group-hover:bg-teal-200 rounded-full leading-[0] text-slate-900">
+              {{- partial "icons/navigation/chevron_right.svg" -}}
+            </span>
           </a>
         </article>
       {{- end -}}
     {{ end }}
   </div>
+
+  {{ "<!-- end: _default/list.html -->" | safeHTML }}
 {{ end }}

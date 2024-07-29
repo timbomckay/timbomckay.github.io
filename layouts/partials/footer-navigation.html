@@ -1,4 +1,6 @@
 {{- with ((site.GetPage "section" "settings").Resources.GetMatch "footer-navigation.md") -}}
+  {{ "<!-- start: partials/footer-navigation.html -->" | safeHTML }}
+
   <nav>
     {{ $classes := "text-current font-normal inline-block mb-1 ml-4" }}
     
@@ -28,4 +30,6 @@
       {{- end -}}
     {{- end -}}
   </nav>
+
+  {{ "<!-- end: partials/footer-navigation.html -->" | safeHTML }}
 {{- end -}}

@@ -1,3 +1,5 @@
+{{ "<!-- start: partials/hero.html -->" | safeHTML }}
+
 {{/* {{ partial "debug" .Params }} */}}
 {{ $isFullcreen := eq .Params.hero.type "fullscreen" }}
 
@@ -40,7 +42,7 @@
     {{ end }}
 
 
-    <p class="text-sm text-primary-500">
+    <p class="text-sm text-primary-500 dark:text-slate-100">
       {{ .PublishDate.Format "January 2006" }}
     </p>
 
@@ -78,7 +80,7 @@
 
 
     <div class="{{ delimit $classList " " }}">
-      {{ $classList := slice "w-full" "bg-gray-100" "shadow-md" }}
+      {{ $classList := slice "w-full" "bg-slate-100" "shadow-md" }}
       {{ if (eq $type "fullscreen") }}
         {{ $classList = $classList | append "absolute" "h-full" "w-full" "object-cover" }}
       {{ else if (eq $type "billboard") }}
@@ -93,3 +95,5 @@
     </div>
   {{- end -}}
 </div>
+
+{{ "<!-- end: partials/hero.html -->" | safeHTML }}

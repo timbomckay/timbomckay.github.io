@@ -1,3 +1,5 @@
+{{ "<!-- start: partials/main-navigation.html -->" | safeHTML }}
+
 <details class="sm:relative print:hidden">
   <summary class="sm:hidden hide-marker px-4 py-2">
     <span class="icon mr-1 text-lg inline-block open:hidden">{{- partial "icons/navigation/menu.svg" -}}</span>
@@ -10,7 +12,7 @@
       {{ $classes := "block sm:inline-block py-2" }}
       
       {{- range .Params.menu -}}
-        {{ $classes := (printf "%s%s" $classes " px-4 text-gray-800 sm:px-2" ) }}
+        {{ $classes := (printf "%s%s" $classes " px-4 text-slate-800 sm:px-2" ) }}
 
         {{- if eq .type "page" -}}
           {{- with (site.GetPage .page) -}}
@@ -45,3 +47,5 @@
     {{- end -}}
   </nav>
 </details>
+
+{{ "<!-- end: partials/main-navigation.html -->" | safeHTML }}

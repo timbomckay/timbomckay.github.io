@@ -1,6 +1,10 @@
+{{ "<!-- start: _default/_markup/render-heading.html -->" | safeHTML }}
+
 <h{{ .Level }} id="{{ .Anchor | safeURL }}">
-  <a href="#{{ .Anchor | safeURL }}" class="header-link icon text-gray-300" aria-label="(anchor)">
-    {{- partial "icons/content/link.svg" -}}
+  <a href="#{{ .Anchor | safeURL }}" class="anchor-link icon" aria-label="(anchor)">
+    #
   </a>
   {{- .Text | safeHTML -}}
 </h{{ .Level }}>
+
+{{ "<!-- end: _default/_markup/render-heading.html -->" | safeHTML }}

@@ -1,3 +1,5 @@
+{{ "<!-- start: partials/social-links.html -->" | safeHTML }}
+
 {{ with ((site.GetPage "section" "settings").Resources.GetMatch "socials.md") }}
   <nav>
     {{ range $k, $v := .Params }}
@@ -16,3 +18,5 @@
     {{ end }}
   </nav>
 {{ end }}
+
+{{ "<!-- end: partials/social-links.html -->" | safeHTML }}

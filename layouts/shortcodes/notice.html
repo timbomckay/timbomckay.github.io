@@ -1,0 +1,48 @@
+{{/*  https://squidfunk.github.io/mkdocs-material/reference/admonitions/  */}}
+{{ $type:= .Get 0 }}
+{{ $title:= .Get "title" }}
+{{ $class:= .Get "class" }}
+
+{{ range $i, $e:= .Params }}
+  {{ if eq $i "type" }}{{ $type = $e }}{{ end }}
+{{ end }}
+
+{{ if not $type }}
+  {{ $type = "note" }}
+{{ end }}
+
+{{ if not $title }}
+  {{ $title = $type }}
+{{ end }}
+
+{{ $color:= "blue" }}
+{{ $icon:= "icons/editor/notes.svg" }}
+
+{{ if eq $type "tip" }}
+  {{ $color = "emerald" }}
+  {{ $icon = "icons/action/announcement.svg" }}
+{{ else if eq $type "info" }}
+  {{ $color = "cyan" }}
+  {{ $icon = "icons/action/info.svg" }}
+{{ else if eq $type "warning" }}
+  {{ $color = "amber" }}
+  {{ $icon = "icons/alert/warning.svg" }}
+{{ end }}
+
+<div class="border-{{ $color }}-600 bg-{{ $color }}-50 shadow-{{ $color }}-600 dark:border-{{ $color }}-400 dark:bg-{{ $color }}-950 dark:shadow-{{ $color }}-400 border my-6 p-2 rounded text-sm shadow-[2px_2px_0_var(--tw-shadow-color)]">
+  <div class="flex gap-2 items-center pb-2 px-1 rounded-t-md text-{{ $color }}-700 dark:text-{{ $color }}-300">
+    <span
+      class="border-{{ $color }}-600 dark:border-{{ $color }}-400 inline-flex icon"
+      aria-hidden="true"
+    >
+      {{- partial $icon -}}
+    </span>
+    <span class="font-bold">{{ $title | title }}</span>
+  </div>
+  
+  <div class="bg-white border-{{ $color }}-500 dark:bg-slate-950 border rounded">
+    <div class="px-4 my-3">
+      {{ .Inner | markdownify }}
+    </div>
+  </div>
+</div>

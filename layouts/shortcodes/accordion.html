@@ -1,0 +1,14 @@
+{{ $title:= .Get 0 }}
+{{ $class:= .Get "class" }}
+{{ $headerClass:= .Get "header-class" }}
+
+{{ range $i, $e:= .Params }}
+  {{ if eq $i "title" }}{{ $title = $e }}{{ end }}
+{{ end }}
+
+<details class="{{ $class }}">
+  <summary class="{{ $headerClass }}">
+    {{ $title | markdownify }}
+  </summary>
+  {{ .Inner | markdownify }}
+</details>

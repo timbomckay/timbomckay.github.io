@@ -9,11 +9,17 @@ disableKinds = ["RSS", "sitemap"]
 
 [minify]
   minifyOutput = true
+  [minify.tdewolff]
+    [minify.tdewolff.html]
+      # keepComments = true
 
 [params]
   mainSections = ['projects']
 
 [markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
   [markup.highlight]
     anchorLineNos = false
     codeFences = true

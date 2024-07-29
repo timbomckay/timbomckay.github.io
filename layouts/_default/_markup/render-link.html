@@ -1,3 +1,5 @@
+{{ "<!-- start: _default/_markup/render-link.html -->" | safeHTML }}
+
 {{- $external := strings.HasPrefix .Destination "http" -}}
 {{- $anchor := strings.HasPrefix .Destination "#" -}}
 <a
@@ -15,3 +17,5 @@
     {{- partial "external-link-icon.html" -}}
   {{- end -}}
 </a>
+
+{{ "<!-- end: _default/_markup/render-link.html -->" | safeHTML }}

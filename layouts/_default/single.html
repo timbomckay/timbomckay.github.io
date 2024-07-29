@@ -1,12 +1,14 @@
 {{ define "main" }}
+  {{ "<!-- start: _default/single.html -->" | safeHTML }}
+
   <article>
     {{- partial "hero" . -}}
 
     <div class="max-w-ch mx-auto">
       {{ if (gt .WordCount 400 )}}
-        <details class="bg-slate-100 rounded text-sm my-12">
+        <details class="bg-slate-100 dark:bg-slate-950 rounded text-sm my-12">
           <summary class="px-4 py-3">Table of Contents</summary>
-          <div class="px-4 py-3 border-t border-slate-500">
+          <div class="px-4 py-3 border-t border-white dark:border-slate-900">
             {{ .TableOfContents }}
           </div>
         </details>
@@ -16,13 +18,13 @@
     </div>
   </article>
 
-  <div class="max-w-ch mx-auto text-center mt-12">
+  <div class="max-w-ch mx-auto text-center mt-12 flex items-center gap-8 justify-center">
     {{ with .PrevInSection }}
       <a
-        class="mx-2 border-2 pl-2 pr-3 py-2 rounded text-gray-500 text-xs hover:border-primary-300"
+        class="text-xs inline-flex items-center group"
         href="{{ .Permalink }}"
       >
-        <span class="icon text-base">
+        <span class="icon text-base mr-2 bg-teal-400 group-hover:bg-teal-200 rounded-full leading-[0] text-slate-900">
           {{- partial "icons/navigation/chevron_left.svg" -}}
         </span>
         {{ .Title }}
@@ -31,14 +33,16 @@
     
     {{ with .NextInSection }}
       <a
-        class="mx-2 border-2 pl-3 pr-2 py-2 rounded text-gray-500 text-xs hover:border-primary-300"
+        class="text-xs inline-flex items-center group"
         href="{{ .Permalink }}"
       >
         {{ .Title }}
-        <span class="icon text-base">
+        <span class="icon text-base ml-2 bg-teal-400 group-hover:bg-teal-200 rounded-full leading-[0] text-slate-900">
           {{- partial "icons/navigation/chevron_right.svg" -}}
         </span>
       </a>
     {{ end }}
   </div>
+
+  {{ "<!-- end: _default/single.html -->" | safeHTML }}
 {{ end }}

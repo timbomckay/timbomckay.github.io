@@ -1,4 +1,6 @@
 {{ define "main" }}
+  {{ "<!-- start: _default/index.html -->" | safeHTML }}
+  
   <div class="max-w-ch mx-auto mt-8 mb-12">
     <h1>{{- .Title -}}</h1>
     {{ with .Content }}
@@ -10,7 +12,7 @@
     {{ range where .Site.RegularPages "Section" "in" .Site.MainSections }}    
       {{- if .Params.hero.image -}}
         <article class="lg:flex gap-8 my-14 odd:flex-row-reverse items-center">
-          <a class="flex-1 basis-[55%] block rounded-3xl overflow-hidden shadow-lg shadow-slate-200" href="{{ .Permalink }}">
+          <a class="flex-1 basis-[55%] block rounded-3xl overflow-hidden shadow-lg shadow-slate-200 dark:shadow-slate-950" href="{{ .Permalink }}">
             {{- partial "image" (dict "src" .Params.hero.image "alt" .Title "loading" "lazy" "method" "Fill" "sizes" "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 640px" "levels" "5") -}}
           </a>
           <div class="flex-1 basis-[45%]">
@@ -24,9 +26,13 @@
                 </a>
               </h2>
               <p class="text-sm">{{ .Summary }}</p>
-              <a href="{{ .Permalink }}" class="mt-4 text-xs">
+
+              <a
+                class="mt-4 text-xs inline-flex items-center group"
+                href="{{ .Permalink }}"
+              >
                 View Project
-                <span class="icon text-sm">
+                <span class="icon text-base ml-2 bg-teal-400 group-hover:bg-teal-200 rounded-full leading-[0] text-slate-900">
                   {{- partial "icons/navigation/chevron_right.svg" -}}
                 </span>
               </a>
@@ -46,4 +52,6 @@
       {{- end -}}
     {{ end }}
   </div>
+
+  {{ "<!-- end: _default/index.html -->" | safeHTML }}
 {{ end }}

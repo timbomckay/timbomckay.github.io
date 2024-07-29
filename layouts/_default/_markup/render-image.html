@@ -1,4 +1,8 @@
+{{ "<!-- start: _default/_markup/render-image.html -->" | safeHTML }}
+
 {{/* <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" with .Title }}title="{{ . }}"{{ end }} /> */}}
 <div class="-mx-6 md:-mx-10 my-12">
   {{- partial "image" (dict "src" (.Destination | safeURL) "alt" .Text "loading" "lazy" "levels" 5) -}}
 </div>
+
+{{ "<!-- end: _default/_markup/render-image.html -->" | safeHTML }}

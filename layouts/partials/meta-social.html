@@ -1,3 +1,5 @@
+{{ "<!-- start: partials/meta-social.html -->" | safeHTML }}
+
 {{ $title := print .Title " · " .Site.Title }}
 {{ if .IsHome }}
   {{ $title = "Tim McKay · A Front-End Engineer Crafting Enjoyable Experiences" }}
@@ -49,3 +51,5 @@
 <meta property="article:modified_time" content="{{ dateFormat "2006-01-02T15:04:05Z" .Lastmod.UTC | safeHTML }}" />
 <meta property="og:updated_time" content="{{ dateFormat "2006-01-02T15:04:05Z" .Lastmod.UTC | safeHTML }}" />
 {{ end }}
+
+{{ "<!-- end: partials/meta-social.html -->" | safeHTML }}
