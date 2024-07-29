@@ -322,10 +322,13 @@ module.exports = {
         '.anchor-link': {
           cssFloat: 'left',
           fontSize: '0.5em',
-          marginLeft: '-2.5ch',
+          marginLeft: '-3ch',
           marginRight: '-2ch',
-          marginTop: '0.75ch',
-          padding: '0.25ch 0.75ch',
+          marginTop: '1ch',
+          padding: '.675ch .75ch',
+          fontFamily: 'math',
+          fontWeight: 500,
+          lineHeight: 1,
           transitionProperty: 'color, opacity',
           ':not(:hover) > &:not(:focus)': { opacity: 0.25 }
         },
