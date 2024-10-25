@@ -86,11 +86,15 @@ In most cases Hugo *should* be able to satisfy this (and the categories that fol
 
 ### Multi-Page Application
 
-[Astro](https://astro.build/) has been very satisyfing to work with for multi-page applications. It's built on top of Vite, supports markdown & MDX, and a modular authoring experience very similar to Vue and Svelte's single file components. The only reason I wouldn't suggest it for single page applications is to minimize the dependenc tree, but feels like a natural part of Vite as a simple addition.
+[Astro](https://astro.build/) has been very satisyfing to work with for multi-page applications. It's a static site generator built on top of Vite, supports markdown & MDX, and a modular authoring experience very similar to Vue and Svelte's single file components. The only reason I wouldn't suggest it for single page applications is to minimize the dependency tree, but feels like a natural part of Vite as a simple addition.
 
-Incorporating [view transitions](https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API) has its place for handling all routing within the application, but for the most part let the browser navigate to a new page. Browsers are really powerful and can handle new page loads rather seamlessly, let it refresh and utilize the browser/memory cache.
+Incorporating [view transitions](https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API) has its place for handling all routing within the application, but for the most part let the browser navigate to a new page. Browsers are really powerful and can handle new page loads rather seamlessly, let it refresh and utilize the browser/memory cache. Using the history api to update url query parameters the page's application(s).
 
-[Observable's Framework](https://observablehq.com/framework/) has peaked my interest for authoring a page in markdown by converting the code blocks to the actual resource (js, css, html-fragments, etc). It's a rather fascinating and the method may potentially be easily converted to MDX. 
+{{<notice title="Future Exploration">}}
+
+[Observable's Framework](https://observablehq.com/framework/) has peaked my interest for authoring a page in markdown by converting the code blocks to the actual resource (js, css, html-fragments, etc). It's a rather fascinating and the method may potentially be easily converted to MDX.
+
+{{</notice>}}
 
 ### Content Management
 
