@@ -330,7 +330,7 @@ module.exports = {
           fontWeight: 500,
           lineHeight: 1,
           transitionProperty: 'color, opacity',
-          ':not(:hover) > &:not(:focus)': { opacity: 0.25 }
+          ':not(:hover) > &:not(:focus)': { opacity: 0 }
         },
         '.btn': {
           fontWeight: theme('fontWeight.bold'),

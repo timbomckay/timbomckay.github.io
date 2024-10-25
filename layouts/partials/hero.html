@@ -41,12 +41,11 @@
       {{ $classList = $classList | append "md:mt-0" }}
     {{ end }}
 
-
-    <p class="text-sm text-primary-500 dark:text-slate-100">
+    <p class="mb-2 text-sm text-primary-500 dark:text-slate-100">
       {{ .PublishDate.Format "January 2006" }}
     </p>
 
-    <h1 class="my-6 {{ delimit $classList " " }}">
+    <h1 class="mt-0 {{ delimit $classList " " }}">
       {{- .Params.title -}}
     </h1>
 
