@@ -2,6 +2,8 @@
 title: "Tech-Stack Heirarchy: A Greenfield Story"
 date: 2024-10-24
 summary: When I use what where & why.
+hero:
+  image: /media/tech-stack.png
 ---
 
 {{<notice title="A Living Document">}}
@@ -108,7 +110,7 @@ Some high level expectations:
 Favorable Solutions:
 
 - [Statamic](https://statamic.com/): I haven't even used Statamic and yet I'm already an advocate for it. Full service solution, great UX, one-time fee, and {{<mark type="super">}}*no database*{{</mark>}} via flat-file documents means a secure static site that removes paying for a constantly active though *unused* database and nothing to hack.
-- [WordPress](https://wordpress.org/): Obviously very popular (though a bit controversial of late). Sites such as A List Apart have proven it's possible to have a very performant WordPress site with the aid of some extra services.
+- [WordPress](https://wordpress.org/): Obviously very popular (though a bit controversial of late). Sites such as [A List Apart](https://alistapart.com/) have proven it's possible to have a very performant WordPress site with the aid of some extra services.
   - Avoid the temptation to have a separate system that generates a static site from the content. It might be neat but it adds more complexity than it's worth both for the author and the maintainers. You could setup content authoring on [WordPress.com](https://wordpress.com/) with a plugin that sends a webhook to GitHub to compile on a new publish to generate and deploy to something like Netlify, but that's a lot of wires.
   - It'd make sense to me to generate static files on the same server any time a page is posted, even if it's a separate directory such as `/site` and `/admin`, but I've not found this kinda solution anywhere.
 - [Tina CMS](https://tina.io/): Sits on top of Hugo or Astro, integrates with GitHub for authors and content versioning, and supports custom content blocks. It's a little strange, but the concept makes sense and is used by [Smashing Magazine](https://www.smashingmagazine.com/2023/09/smashing-magazine-tinacms-manage-editorial-workflow/) to boot.
