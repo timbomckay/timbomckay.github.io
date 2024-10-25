@@ -51,7 +51,9 @@ There are many different types of caches, and lots of them are used to cover up 
 
 ### Minimize Dependencies
 
-Security is an important part of web development & applications, and the more dependencies an application has the more likely it is to get vulnerabilities, and increases the difficulty to resolve when it's a deeply nested package vulnerability. Sometimes this is linters or build tools, other times it's the primary application's framework (such as Storybook or Angular). [Dependabot](https://github.com/features/security) helps catch things early (if you're lucky enough to use GitHub), but it's frustrating when you've done as many `"overrides"` as possible and you're mercy of the package maintainers to unblock your application.
+Security is an important part of web development & applications, and the more dependencies an application has the more likely it is to get vulnerabilities, and increases the difficulty to resolve when it's a deeply nested package vulnerability. Sometimes this is linters or build tools, other times it's the primary application's framework (such as Storybook or Angular).
+
+[Dependabot](https://github.com/features/security) helps catch things early (if you're lucky enough to use GitHub), but it's frustrating when you've done as many `"overrides"` as possible and you're mercy of the package maintainers to unblock your application.
 
 ---
 
