@@ -43,7 +43,7 @@ Joining the likes of [Microsoft Edge](https://blogs.windows.com/msedgedev/2024/0
 
 One of the major hurdles of Shadow-DOM web components is React/Vue-like expectations when it's meant to be treated like raw, single purpose html elements that are composed together to contstruct applications. You *can* create fully complex single page applications with only web components all inside of a root `<my-app>` component, but that's more of a pendulum swing past the core mindset and best practices of web components.
 
-Using [Vue](https://vuejs.org/) if I did find a need to maniuplate the Light DOM without web components, or possibly exploring [Svelte](https://svelte.dev/).
+Using [Vue](https://vuejs.org/) if I did find a need to manipulate the Light DOM without web components, or possibly exploring [Svelte](https://svelte.dev/).
 
 ### Promote Static
 
