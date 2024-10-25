@@ -37,7 +37,7 @@ As outlined in the [utility first](/posts/utility-first-css/) post, CSS should b
 
 ### JavaScript Enhancement 
 
-The initial load should be as JavaScript free as possible, allowing the initial render to complete before executing anything. Then using web components where applicable to *enhance* the functionality (via [Lit](https://lit.dev/)), along with third-party resources and other scripts to enhance functionality.
+The initial load should be as JavaScript free as possible, allowing the initial render to complete before executing anything. Then using web components where applicable to *enhance* the functionality (via [Lit](https://lit.dev/)), along with third-party resources and other scripts.
 
 Joining the likes of [Microsoft Edge](https://blogs.windows.com/msedgedev/2024/05/28/an-even-faster-microsoft-edge), [Adobe Photoshop](https://web.dev/articles/ps-on-the-web#web_components_and_lit), and [Google Maps](https://mapsplatform.google.com/resources/blog/build-maps-faster-web-components/) in making performant applications with web components.
 
