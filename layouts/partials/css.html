@@ -1,0 +1,11 @@
+{{ with (templates.Defer (dict "key" "global")) }}
+  {{ with resources.Get "css/main.css" }}
+    {{ $opts := dict
+      "minify" (not hugo.IsDevelopment)
+      "inlineImports" true
+    }}
+    {{ with . | css.TailwindCSS $opts }}
+      <style>{{ .Content | safeCSS }}</style>
+    {{ end }}
+  {{ end }}
+{{ end }}

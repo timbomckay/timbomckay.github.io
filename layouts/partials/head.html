@@ -10,59 +10,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="HandheldFriendly" content="True" />
 
-{{ $tailwind := slice "@tailwind base;" "@tailwind components;" }}
-
-{{ if hugo.IsProduction }}
-  {{ $tailwind = $tailwind | append "@tailwind utilities;" }}
-{{ end }}
-
-{{ $css := resources.FromString "main.css" (delimit $tailwind " ") | resources.PostCSS }}
-
-{{ if hugo.IsProduction }}
-  {{ $css = $css | minify | resources.PostProcess }}
-{{ end }}
-
-<style>{{ $css.Content | safeCSS }}</style>
-
-{{ if hugo.IsDevelopment }}
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    screens: {
-      sm: `${640 / 16}rem`, // => @media (min-width: 40rem) { ... }
-      md: `${768 / 16}rem`, // => @media (min-width: 48rem) { ... }
-      lg: `${1024 / 16}rem`, // => @media (min-width: 64rem) { ... }
-      xl: `${1280 / 16}rem`, // => @media (min-width: 80rem) { ... }
-    },
-    theme: {
-      extend: {
-        colors: {
-          // TODO: Remove 'primary'
-          primary: {
-            50: '#F3F8FD',
-            100: '#E7F0FB',
-            200: '#C4DAF4',
-            300: '#A0C3ED',
-            400: '#5896E0',
-            500: '#1169D3',
-            600: '#0F5FBE',
-            700: '#0A3F7F',
-            800: '#082F5F',
-            900: '#05203F',
-          },
-        },
-        maxWidth: {
-          ch: '72ch',
-        },
-      },
-    },
-    corePlugins: {
-      preflight: false,
-      animation: false,
-    },
-  }
-</script>
-{{ end }}
+{{ partialCached "css.html" . }}
 
 {{ if hugo.IsProduction }}
 <script async src="https://us.umami.is/script.js" data-website-id="86def73f-69fc-4a51-a6a3-77c709db394e"></script>

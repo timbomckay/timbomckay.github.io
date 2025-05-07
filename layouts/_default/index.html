@@ -1,7 +1,7 @@
 {{ define "main" }}
   {{ "<!-- start: _default/index.html -->" | safeHTML }}
   
-  <div class="max-w-ch mx-auto mt-8 mb-12">
+  <div class="max-w-[72ch] mx-auto mt-8 mb-12">
     <h1>{{- .Title -}}</h1>
     {{ with .Content }}
       {{- . -}}
@@ -40,7 +40,7 @@
           </div>
         </article>
       {{- else -}}
-        <article class="mx-auto max-w-ch my-24 px-6">
+        <article class="mx-auto max-w-[72ch] my-24 px-6">
           <h2 class="sm:mt-0">
             <a href="{{ .Permalink }}" class="font-extrabold">{{ .Title }}</a>
           </h2>

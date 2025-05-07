@@ -4,7 +4,7 @@
   <article>
     {{- partial "hero" . -}}
 
-    <div class="max-w-ch mx-auto">
+    <div class="max-w-[72ch] mx-auto">
       {{ if (gt .WordCount 400 )}}
         <details class="bg-slate-100 dark:bg-slate-950 rounded text-sm my-12">
           <summary class="px-4 py-3">Table of Contents</summary>
@@ -18,7 +18,7 @@
     </div>
   </article>
 
-  <div class="max-w-ch mx-auto text-center mt-12 flex items-center gap-8 justify-center">
+  <div class="max-w-[72ch] mx-auto text-center mt-12 flex items-center gap-8 justify-center">
     {{ with .PrevInSection }}
       <a
         class="text-xs inline-flex items-center group"
