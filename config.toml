@@ -1,5 +1,5 @@
 baseURL = "/"
-languageCode = "en-us"
+locale = "en-us"
 title = "Tim McKay"
 relativeurls = false
 disableKinds = ["RSS", "sitemap"]
