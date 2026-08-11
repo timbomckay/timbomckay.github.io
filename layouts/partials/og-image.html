@@ -1,0 +1,55 @@
+{{/*
+  Generates a 1200x630 Open Graph card for pages with no hero image.
+  Returns the image resource; callers read .Permalink, .Width and .Height.
+
+  images.Text draws the string as-is and cannot measure glyph widths, so the
+  title is wrapped here against a character budget tuned to Lato Bold at 72px
+  across the 1040px of usable width.
+*/}}
+
+{{ $charsPerLine := 26 }}
+{{ $maxLines := 4 }}
+
+{{ $base := resources.Get "images/og-base.png" }}
+{{ $font := resources.Get "fonts/Lato-Bold.ttf" }}
+
+{{ $title := .Title }}
+{{ if .IsHome }}
+  {{ $title = "A Front-End Engineer Crafting Enjoyable Experiences" }}
+{{ end }}
+
+{{ $lines := slice }}
+{{ $current := "" }}
+{{ range (split $title " ") }}
+  {{ if eq $current "" }}
+    {{ $current = . }}
+  {{ else if le (add (len $current) (add 1 (len .))) $charsPerLine }}
+    {{ $current = printf "%s %s" $current . }}
+  {{ else }}
+    {{ $lines = $lines | append $current }}
+    {{ $current = . }}
+  {{ end }}
+{{ end }}
+{{ with $current }}{{ $lines = $lines | append . }}{{ end }}
+{{ if gt (len $lines) $maxLines }}
+  {{ $lines = first $maxLines $lines }}
+{{ end }}
+
+{{ $titleText := images.Text (delimit $lines "\n") (dict
+  "font" $font
+  "size" 72
+  "color" "#ffffff"
+  "x" 80
+  "y" 150
+  "linespacing" 18
+) }}
+
+{{ $byline := images.Text site.Title (dict
+  "font" $font
+  "size" 30
+  "color" "#5896E0"
+  "x" 80
+  "y" 500
+) }}
+
+{{ return ($base | images.Filter $titleText $byline) }}
